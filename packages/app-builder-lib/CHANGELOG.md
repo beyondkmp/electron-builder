@@ -1,5 +1,17 @@
 # app-builder-lib
 
+## 25.0.0-alpha.6
+
+### Minor Changes
+
+- [#8142](https://github.com/electron-userland/electron-builder/pull/8142) [`8160363a`](https://github.com/electron-userland/electron-builder/commit/8160363ac2821242ab22e225a9038b56e4798cc6) Thanks [@mmaietta](https://github.com/mmaietta)! - feat: add config options for setting `MinVersion` and `MaxVersionTested` fields in appx manifest
+
+### Patch Changes
+
+- Updated dependencies []:
+  - dmg-builder@25.0.0-alpha.6
+  - electron-builder-squirrel-windows@25.0.0-alpha.6
+
 ## 25.0.0-alpha.5
 
 ### Patch Changes
