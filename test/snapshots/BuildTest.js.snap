@@ -927,7 +927,36 @@ Object {
                 },
               },
             },
-            "node_modules": Object {
+            "package.json": Object {
+              "size": "<size>",
+            },
+          },
+        },
+        "lzma-native": Object {
+          "files": Object {
+            "LICENSE": Object {
+            "size": "<size>",
+           },
+           "bin": Object {
+             "files": Object {
+               "lzmajs": Object {
+                 "executable": true,
+                 "size": "<size>",
+               },
+             },
+           },
+           "index.js": Object {
+             "size": "<size>",
+           },
+           "liblzma-build.sh": Object {
+             "executable": true,
+             "size": "<size>",
+           },
+           "liblzma-config.sh": Object {
+             "executable": true,
+             "size": "<size>",
+           },
+           "node_modules": Object {
               "files": Object {
                 "node-addon-api": Object {
                   "files": Object {
@@ -982,9 +1011,6 @@ Object {
                           "executable": true,
                           "size": "<size>",
                         },
-                        "eslint-format.js": Object {
-                          "size": "<size>",
-                        },
                       },
                     },
                   },
@@ -995,127 +1021,98 @@ Object {
               "size": "<size>",
             },
           },
-        },
-        "lzma-native": Object {
-          "files": Object {
-            "LICENSE": Object {
-              "size": "<size>",
-            },
-            "bin": Object {
-              "files": Object {
-                "lzmajs": Object {
-                  "executable": true,
-                  "size": "<size>",
+          "prebuilds": Object {
+            "files": Object {
+              "darwin-arm64": Object {
+                "files": Object {
+                  "electron.napi.node": Object {
+                    "size": "<size>",
+                  },
+                  "node.napi.node": Object {
+                    "size": "<size>",
+                  },
                 },
               },
-            },
-            "index.js": Object {
-              "size": "<size>",
-            },
-            "liblzma-build.sh": Object {
-              "executable": true,
-              "size": "<size>",
-            },
-            "liblzma-config.sh": Object {
-              "executable": true,
-              "size": "<size>",
-            },
-            "package.json": Object {
-              "size": "<size>",
-            },
-            "prebuilds": Object {
-              "files": Object {
-                "darwin-arm64": Object {
-                  "files": Object {
-                    "electron.napi.node": Object {
-                      "size": "<size>",
-                    },
-                    "node.napi.node": Object {
-                      "size": "<size>",
-                    },
+              "darwin-x64": Object {
+                "files": Object {
+                  "electron.napi.node": Object {
+                    "size": "<size>",
+                  },
+                  "node.napi.node": Object {
+                    "size": "<size>",
                   },
                 },
-                "darwin-x64": Object {
-                  "files": Object {
-                    "electron.napi.node": Object {
-                      "size": "<size>",
-                    },
-                    "node.napi.node": Object {
-                      "size": "<size>",
-                    },
+              },
+              "linux-arm64": Object {
+                "files": Object {
+                  "electron.napi.node": Object {
+                    "size": "<size>",
+                  },
+                  "node.napi.node": Object {
+                    "size": "<size>",
                   },
                 },
-                "linux-arm64": Object {
-                  "files": Object {
-                    "electron.napi.node": Object {
-                      "size": "<size>",
-                    },
-                    "node.napi.node": Object {
-                      "size": "<size>",
-                    },
+              },
+              "linux-x64": Object {
+                "files": Object {
+                  "electron.napi.node": Object {
+                    "size": "<size>",
+                  },
+                  "node.napi.node": Object {
+                    "size": "<size>",
                   },
                 },
-                "linux-x64": Object {
-                  "files": Object {
-                    "electron.napi.node": Object {
-                      "size": "<size>",
-                    },
-                    "node.napi.node": Object {
-                      "size": "<size>",
-                    },
+              },
+              "win32-ia32": Object {
+                "files": Object {
+                  "electron.napi.node": Object {
+                    "size": "<size>",
+                  },
+                  "node.napi.node": Object {
+                    "size": "<size>",
                   },
                 },
-                "win32-ia32": Object {
-                  "files": Object {
-                    "electron.napi.node": Object {
-                      "size": "<size>",
-                    },
-                    "node.napi.node": Object {
-                      "size": "<size>",
-                    },
+              },
+              "win32-x64": Object {
+                "files": Object {
+                  "electron.napi.node": Object {
+                    "size": "<size>",
                   },
-                },
-                "win32-x64": Object {
-                  "files": Object {
-                    "electron.napi.node": Object {
-                      "size": "<size>",
-                    },
-                    "node.napi.node": Object {
-                      "size": "<size>",
-                    },
+                  "node.napi.node": Object {
+                    "size": "<size>",
                   },
                 },
               },
             },
-            "src": Object {
-              "files": Object {
-                "filter-array.cpp": Object {
-                  "size": "<size>",
-                },
-                "index-parser.cpp": Object {
-                  "size": "<size>",
-                },
-                "index-parser.h": Object {
-                  "size": "<size>",
-                },
-                "liblzma-functions.cpp": Object {
-                  "size": "<size>",
-                },
-                "liblzma-node.hpp": Object {
-                  "size": "<size>",
-                },
-                "lzma-stream.cpp": Object {
-                  "size": "<size>",
-                },
-                "module.cpp": Object {
-                  "size": "<size>",
-                },
-                "mt-options.cpp": Object {
-                  "size": "<size>",
-                },
-                "util.cpp": Object {
-                  "size": "<size>",
-                },
+          },
+          "src": Object {
+            "files": Object {
+              "filter-array.cpp": Object {
+                "size": "<size>",
+              },
+              "index-parser.cpp": Object {
+                "size": "<size>",
+              },
+              "index-parser.h": Object {
+                "size": "<size>",
+              },
+              "liblzma-functions.cpp": Object {
+                "size": "<size>",
+              },
+              "liblzma-node.hpp": Object {
+                "size": "<size>",
+              },
+              "lzma-stream.cpp": Object {
+                "size": "<size>",
+              },
+              "module.cpp": Object {
+                "size": "<size>",
+              },
+              "mt-options.cpp": Object {
+                "size": "<size>",
+              },
+              "util.cpp": Object {
+                "size": "<size>",
               },
             },
           },
@@ -1242,6 +1239,9 @@ Object {
                 },
                 "conversion.js": Object {
                   "executable": true,
+                  "size": "<size>",
+                },
+                "eslint-format.js": Object {
                   "size": "<size>",
                 },
               },
