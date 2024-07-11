@@ -1,5 +1,11 @@
 ## 4.3.0
 
+## 6.3.0-alpha.8
+
+### Patch Changes
+
+- [#8311](https://github.com/electron-userland/electron-builder/pull/8311) [`35a0784e`](https://github.com/electron-userland/electron-builder/commit/35a0784eb4cffc2fcbf33ec58fefbacf8e8e5125) Thanks [@rastiqdev](https://github.com/rastiqdev)! - fix(rpm-updater): stop uninstalling app before update
+
 ## 6.3.0-alpha.7
 
 ### Patch Changes

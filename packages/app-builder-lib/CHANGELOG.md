@@ -1,5 +1,17 @@
 # app-builder-lib
 
+## 25.0.0-alpha.13
+
+### Patch Changes
+
+- [#8310](https://github.com/electron-userland/electron-builder/pull/8310) [`145ecb66`](https://github.com/electron-userland/electron-builder/commit/145ecb66baabd39ca523ebbba26ef484384fe8e7) Thanks [@beyondkmp](https://github.com/beyondkmp)! - update binary checking
+
+- [#8314](https://github.com/electron-userland/electron-builder/pull/8314) [`1337f158`](https://github.com/electron-userland/electron-builder/commit/1337f158c93d4c83ebaefb20833811fd90f05f16) Thanks [@beyondkmp](https://github.com/beyondkmp)! - change license file's encode to utf8 with BOM
+
+- Updated dependencies []:
+  - dmg-builder@25.0.0-alpha.13
+  - electron-builder-squirrel-windows@25.0.0-alpha.13
+
 ## 25.0.0-alpha.12
 
 ### Patch Changes
