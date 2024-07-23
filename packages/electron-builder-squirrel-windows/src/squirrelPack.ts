@@ -62,9 +62,9 @@ export class SquirrelBuilder {
     const dirToArchive = await packager.info.tempDirManager.createTempDir({ prefix: "squirrel-windows" })
     const outputDirectory = this.outputDirectory
     const options = this.options
-    const appUpdate = path.join(dirToArchive, "Update.exe")
+    const appUpdate = path.join(dirToArchive, "Squirrel.exe")
     await Promise.all([
-      copyFile(path.join(options.vendorPath, "Update.exe"), appUpdate).then(() => packager.sign(appUpdate)),
+      copyFile(path.join(options.vendorPath, "Squirrel.exe"), appUpdate).then(() => packager.sign(appUpdate)),
       Promise.all([
         fs.rm(`${outputDirectory.replace(/\\/g, "/")}/*-full.nupkg`, { recursive: true, force: true }),
         fs.rm(path.join(outputDirectory, "RELEASES"), { recursive: true, force: true }),
@@ -226,13 +226,13 @@ async function pack(options: SquirrelOptions, directory: string, updateFile: str
     { name: "1.psmdcp", prefix: "package/services/metadata/core-properties" }
   )
 
-  archive.file(updateFile, { name: "Update.exe", prefix: "lib/net45" })
+  archive.file(updateFile, { name: "Squirrel.exe", prefix: "lib/net45" })
   await encodedZip(archive, directory, "lib/net45", options.vendorPath, packager)
   await archivePromise
 }
 
 async function execSw(options: SquirrelOptions, args: Array<string>) {
-  return exec(process.platform === "win32" ? path.join(options.vendorPath, "Update.com") : "mono", prepareArgs(args, path.join(options.vendorPath, "Update-Mono.exe")), {
+  return exec(process.platform === "win32" ? path.join(options.vendorPath, "Squirrel.com") : "mono", prepareArgs(args, path.join(options.vendorPath, "Squirrel-Mono.exe")), {
     env: {
       ...process.env,
       SZA_PATH: await getPath7za(),

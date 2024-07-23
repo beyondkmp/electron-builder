@@ -1,6 +1,6 @@
 import { sanitizeFileName } from "app-builder-lib/out/util/filename"
 import { InvalidConfigurationError, log, isEmptyOrSpaces } from "builder-util"
-import { getBinFromUrl } from "app-builder-lib/out/binDownload"
+import { getBin } from "app-builder-lib/out/binDownload"
 import { Arch, getArchSuffix, SquirrelWindowsOptions, Target } from "app-builder-lib"
 import { WinPackager } from "app-builder-lib/out/winPackager"
 import * as path from "path"
@@ -112,7 +112,12 @@ export default class SquirrelWindowsTarget extends Target {
       extraMetadataSpecs: projectUrl == null ? null : `\n    <projectUrl>${projectUrl}</projectUrl>`,
       copyright: appInfo.copyright,
       packageCompressionLevel: parseInt((process.env.ELECTRON_BUILDER_COMPRESSION_LEVEL || packager.compression === "store" ? 0 : 9) as any, 10),
-      vendorPath: await getBinFromUrl("Squirrel.Windows", "1.9.0", "zJHk4CMATM7jHJ2ojRH1n3LkOnaIezDk5FAzJmlSEQSiEdRuB4GGLCegLDtsRCakfHIVfKh3ysJHLjynPkXwhQ=="),
+      // vendorPath: await getBinFromUrl("Squirrel.Windows", "1.9.0", "zJHk4CMATM7jHJ2ojRH1n3LkOnaIezDk5FAzJmlSEQSiEdRuB4GGLCegLDtsRCakfHIVfKh3ysJHLjynPkXwhQ=="),
+      vendorPath: await getBin(
+        "Squirrel.Windows",
+        "https://github.com/beyondkmp/electron-builder-binaries/releases/download/Squirrel.Windows-2.0.1/Squirrel.Windows-2.0.1.7z",
+        "MGQ784sFunzaN98KyOYo6BMFqMDQHcXIrHVOfAbPOQnKTE0knPLmQmcmSjbFgLCvhHF+nyO8px1b962sRYsRYw=="
+      ),
       ...(this.options as any),
     }
 
