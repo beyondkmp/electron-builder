@@ -1,5 +1,15 @@
 # app-builder-lib
 
+## 25.0.4
+
+### Patch Changes
+
+- [#8392](https://github.com/electron-userland/electron-builder/pull/8392) [`12c52a81`](https://github.com/electron-userland/electron-builder/commit/12c52a81420f04ec0e205dd83798c2b0b773011d) Thanks [@beyondkmp](https://github.com/beyondkmp)! - Automatically place .node files into app.asar.unpack
+
+- Updated dependencies []:
+  - dmg-builder@25.0.4
+  - electron-builder-squirrel-windows@25.0.4
+
 ## 25.0.3
 
 ### Patch Changes

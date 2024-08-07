@@ -1,3 +1,17 @@
+# [](https://github.com/electron-userland/electron-builder/compare/v25.0.3...v) (2024-08-07)
+
+
+### Bug Fixes
+
+* **electron-updater,deb:** Handle spaces in application artifact name for deb ([#8400](https://github.com/electron-userland/electron-builder/issues/8400)) ([9dc0b49](https://github.com/electron-userland/electron-builder/commit/9dc0b49aea1d3bb56b42c3b1bdb6001708a34439))
+
+
+### Features
+
+* always unpack native node files ([#8392](https://github.com/electron-userland/electron-builder/issues/8392)) ([12c52a8](https://github.com/electron-userland/electron-builder/commit/12c52a81420f04ec0e205dd83798c2b0b773011d))
+
+
+
 # [](https://github.com/electron-userland/electron-builder/compare/v25.0.2...v) (2024-07-31)
 
 
