@@ -1,5 +1,27 @@
 # app-builder-lib
 
+## 26.0.0-alpha.0
+
+### Major Changes
+
+- [#8562](https://github.com/electron-userland/electron-builder/pull/8562) [`b8185d48a75e65932196700e28bf71613dd141b4`](https://github.com/electron-userland/electron-builder/commit/b8185d48a75e65932196700e28bf71613dd141b4) Thanks [@beyondkmp](https://github.com/beyondkmp)! - support including node_modules in other subdirectories
+
+### Minor Changes
+
+- [#8525](https://github.com/electron-userland/electron-builder/pull/8525) [`13f55a3ef070d946f5d80dd412a557bd38c98424`](https://github.com/electron-userland/electron-builder/commit/13f55a3ef070d946f5d80dd412a557bd38c98424) Thanks [@mmaietta](https://github.com/mmaietta)! - feat: migrate `electronDist` to be an electron-builder `Hook`
+
+- [#8394](https://github.com/electron-userland/electron-builder/pull/8394) [`ae9221d947c2dedff7b655ddafceb9746f9f4460`](https://github.com/electron-userland/electron-builder/commit/ae9221d947c2dedff7b655ddafceb9746f9f4460) Thanks [@xyloflake](https://github.com/xyloflake)! - feat: Implement autoupdates for pacman
+
+### Patch Changes
+
+- [#8566](https://github.com/electron-userland/electron-builder/pull/8566) [`e45fecf04d1ba758ed524391a1fc161e5c57d305`](https://github.com/electron-userland/electron-builder/commit/e45fecf04d1ba758ed524391a1fc161e5c57d305) Thanks [@mmaietta](https://github.com/mmaietta)! - chore: change signing warning message to debug
+
+- Updated dependencies [[`b8185d48a75e65932196700e28bf71613dd141b4`](https://github.com/electron-userland/electron-builder/commit/b8185d48a75e65932196700e28bf71613dd141b4)]:
+  - builder-util@26.0.0-alpha.0
+  - dmg-builder@26.0.0-alpha.0
+  - electron-builder-squirrel-windows@26.0.0-alpha.0
+  - electron-publish@26.0.0-alpha.0
+
 ## 25.1.8
 
 ### Patch Changes
