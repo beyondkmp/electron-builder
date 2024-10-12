@@ -1,5 +1,17 @@
 # app-builder-lib
 
+## 26.0.0-alpha.2
+
+### Minor Changes
+
+- [#8570](https://github.com/electron-userland/electron-builder/pull/8570) [`c8484305`](https://github.com/electron-userland/electron-builder/commit/c84843053a8f9e0b6af14c6b2ed33c5f82d495b3) Thanks [@mmaietta](https://github.com/mmaietta)! - feat: migrate to official `electron/asar` packaging
+
+### Patch Changes
+
+- Updated dependencies []:
+  - dmg-builder@26.0.0-alpha.2
+  - electron-builder-squirrel-windows@26.0.0-alpha.2
+
 ## 26.0.0-alpha.1
 
 ### Patch Changes
