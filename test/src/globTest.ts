@@ -3,6 +3,7 @@ import { readAsar } from "app-builder-lib/out/asar/asar"
 import { outputFile } from "fs-extra"
 import * as path from "path"
 import * as fs from "fs/promises"
+import { TmpDir } from "temp-file"
 import { assertThat } from "./helpers/fileAssert"
 import { app, appThrows, assertPack, modifyPackageJson, PackedContext, removeUnstableProperties, verifyAsarFileTree } from "./helpers/packTester"
 import { verifySmartUnpack } from "./helpers/verifySmartUnpack"
@@ -122,6 +123,66 @@ test.ifNotWindows(
       },
     }
   )
+)
+
+test.ifNotWindows(
+  "outside link for copy file",
+  async () => {
+    const tempDir = new TmpDir(`pack-tester: outside link`)
+    const tmpDir = await tempDir.getTempDir()
+    let localPath1 = path.join(tmpDir, "foo")
+    let localPath2 = path.join(tmpDir, "bar")
+    await outputFile(path.join(localPath1, "realFoo"), "data")
+    await outputFile(path.join(localPath2, "realBar"), "data")
+
+    await fs.symlink(path.join(localPath1, "realFoo"), path.join(localPath2, "linkfoo"))
+
+    return appThrows(
+      {
+        targets: Platform.LINUX.createTarget(DIR_TARGET),
+        config: {
+          files: [
+            {
+              from: tmpDir +path.sep+ "bar",
+              to: "bar"
+            },
+          ],
+        },
+      },
+      {
+      }
+    )()
+  }
+)
+
+test.ifNotWindows(
+  "outside link for copy file xxxx",
+  async () => {
+    const tempDir = new TmpDir(`pack-tester: outside link`)
+    const tmpDir = await tempDir.getTempDir()
+    let localPath1 = path.join(tmpDir, "foo")
+    await outputFile(path.join(localPath1, "realFoo"), "data")
+    await fs.symlink(path.join(localPath1, "realFoo"), path.join(localPath1, "linkfoo"))
+    return app(
+      {
+        targets: Platform.LINUX.createTarget(DIR_TARGET),
+        config: {
+          files: [
+            {
+              from: tmpDir +path.sep+ "foo",
+              to: "foo"
+            },
+          ],
+        },
+      },
+      {
+        packed: async context => {
+          assertThat(path.join(path.join(context.getResources(Platform.LINUX), "foo", "realFoo"))).isFile()
+          assertThat(path.join(path.join(context.getResources(Platform.LINUX), "foo", "linkfoo"))).isSymbolicLink()
+        },
+      }
+    )()
+  }
 )
 
 test.ifDevOrLinuxCi("local node module with file protocol", () => {

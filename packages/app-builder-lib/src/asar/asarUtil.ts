@@ -86,7 +86,7 @@ export class AsarPackager {
         return
       }
     }
-    const writeFileOrSymlink = async (transformedData: string | Buffer | undefined, source: string, destination: string, stat: fs.Stats) => {
+    const writeFileOrSymlink = async (transformedData: string | Buffer | undefined, source: string, destination: string, stat: fs.Stats, sourceDir: string) => {
       copiedFiles.add(destination)
 
       // If transformed data, skip symlink logic
@@ -100,9 +100,9 @@ export class AsarPackager {
         return this.copyFileOrData(undefined, source, destination, stat)
       }
 
-      const realPathRelative = path.relative(this.config.appDir, realPathFile)
-      const symlinkTarget = path.resolve(this.rootForAppFilesWithoutAsar, realPathRelative)
+      const realPathRelative = path.relative(sourceDir, realPathFile)
       const isOutsidePackage = realPathRelative.startsWith("..")
+      const symlinkTarget = path.resolve(this.rootForAppFilesWithoutAsar, realPathRelative)
       if (isOutsidePackage) {
         log.error({ source: log.filePath(source), realPathFile: log.filePath(realPathFile) }, `unable to copy, file is symlinked outside the package`)
         throw new Error(
@@ -130,7 +130,7 @@ export class AsarPackager {
         const dest = path.resolve(this.rootForAppFilesWithoutAsar, relative)
 
         matchUnpacker(file, dest, metadata)
-        taskManager.addTask(writeFileOrSymlink(transformedData, file, dest, metadata))
+        taskManager.addTask(writeFileOrSymlink(transformedData, file, dest, metadata, fileSet.src))
 
         if (taskManager.tasks.length > MAX_FILE_REQUESTS) {
           await taskManager.awaitTasks()
