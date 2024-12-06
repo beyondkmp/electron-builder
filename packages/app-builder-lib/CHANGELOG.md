@@ -1,5 +1,15 @@
 # app-builder-lib
 
+## 26.0.0-alpha.8
+
+### Patch Changes
+
+- [#8661](https://github.com/electron-userland/electron-builder/pull/8661) [`6a294c97`](https://github.com/electron-userland/electron-builder/commit/6a294c9725f30cf1b6151363a32b9d1395b0122e) Thanks [@t3chguy](https://github.com/t3chguy)! - chore: remove stale handler for `extend-info` in electronMac plist creation
+
+- Updated dependencies []:
+  - dmg-builder@26.0.0-alpha.8
+  - electron-builder-squirrel-windows@26.0.0-alpha.8
+
 ## 26.0.0-alpha.7
 
 ### Patch Changes
