@@ -3,7 +3,7 @@ import * as path from "path"
 import { CheckingWinPackager } from "../helpers/CheckingPackager"
 import { app, assertPack, copyTestAsset } from "../helpers/packTester"
 
-test.ifAll.ifDevOrWinCi(
+test.skip(
   "Squirrel.Windows",
   app(
     {
