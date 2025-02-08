@@ -563,6 +563,9 @@ importers:
       '@electron/osx-sign':
         specifier: ^1.0.4
         version: 1.3.1
+      '@electron/windows-sign':
+        specifier: 1.2.0
+        version: 1.2.0
       '@jest/core':
         specifier: 29.7.0
         version: 29.7.0(ts-node@10.9.2(@types/node@22.10.1)(typescript@5.7.2))

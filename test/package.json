@@ -28,6 +28,7 @@
     "temp-file": "^3.4.0",
     "yargs": "^17.6.2",
     "electron-winstaller": "5.4.0",
+    "@electron/windows-sign": "1.2.0",
     "adm-zip": "0.5.16"
   },
   "devDependencies": {
