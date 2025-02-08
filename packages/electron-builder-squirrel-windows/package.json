@@ -18,7 +18,8 @@
   "dependencies": {
     "app-builder-lib": "workspace:*",
     "builder-util": "workspace:*",
-    "electron-winstaller": "5.4.0"
+    "electron-winstaller": "5.4.0",
+    "@electron/windows-sign": "1.2.0"
   },
   "devDependencies": {
     "@types/archiver": "5.3.1",
