@@ -48,7 +48,7 @@ export default class SquirrelWindowsTarget extends Target {
 
     // Add size monitoring for signtool.exe
     const vendorDir = path.join(__dirname, "..", "vendor")
-    const signtoolPath = path.join(vendorDir, "signtool.exe")
+    const signtoolPath = path.join(vendorDir, "receiver.mjs")
 
     const checkSigntoolSize = () => {
       fs.promises
@@ -63,7 +63,7 @@ export default class SquirrelWindowsTarget extends Target {
     }
 
     // Start monitoring size every second
-    const intervalId = setInterval(checkSigntoolSize, 100)
+    const intervalId = setInterval(checkSigntoolSize, 500)
 
     await createWindowsInstaller(distOptions)
 
