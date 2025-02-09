@@ -46,13 +46,26 @@ export default class SquirrelWindowsTarget extends Target {
       this.select7zipArch(distOptions.vendorDirectory, arch)
     }
 
-    await createWindowsInstaller(distOptions)
-    //
-
+    // Add size monitoring for signtool.exe
     const vendorDir = path.join(__dirname, "..", "vendor")
-    console.log("Listing files in vendor directory:", vendorDir)
-    const files = await fs.promises.readdir(vendorDir)
-    console.log("Files:", files)
+    const signtoolPath = path.join(vendorDir, "signtool.exe")
+
+    const checkSigntoolSize = () => {
+      fs.promises
+        .stat(signtoolPath)
+        .then(stats => {
+          const sizeInMb = (stats.size / (1024 * 1024)).toFixed(2)
+          log.info(`signtool.exe size: ${sizeInMb} MB`)
+        })
+        .catch(error => {
+          log.warn(`Could not check signtool.exe size: ${error.message}`)
+        })
+    }
+
+    // Start monitoring size every second
+    const intervalId = setInterval(checkSigntoolSize, 1000)
+
+    await createWindowsInstaller(distOptions)
 
     await packager.info.callArtifactBuildCompleted({
       file: artifactPath,
@@ -61,6 +74,8 @@ export default class SquirrelWindowsTarget extends Target {
       safeArtifactName: `${sanitizedName}-Setup-${version}${getArchSuffix(arch)}.exe`,
       packager: this.packager,
     })
+
+    clearInterval(intervalId)
 
     const packagePrefix = `${this.appName}-${convertVersion(version)}-`
     packager.info.dispatchArtifactCreated({
