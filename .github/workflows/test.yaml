@@ -173,20 +173,28 @@ jobs:
     steps:
       - name: Checkout code repository
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
+        with:
+          path: C:\source # Force checkout to C: drive
 
       - name: Setup Tests
         uses: ./.github/actions/pretest
         with:
           cache-key: v-23.3.10-windows-electron
-          cache-path: ~\AppData\Local\electron\Cache
+          cache-path: C:\electron-cache # Force cache to C: drive
 
       - name: Test
-        run: pnpm ci:test
+        run: |
+          echo "Setting temp directories to C: drive..."
+          set TEMP=C:\temp
+          set TMP=C:\temp
+          mkdir C:\temp
+          pnpm ci:test
         env:
           DEBUG: "electron-windows-installer:main"
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
           TEST_FILES: ${{ matrix.testFiles }}
           FORCE_COLOR: 1
+          ELECTRON_CACHE: C:\electron-cache # Force Electron cache to C: drive
 
   test-mac:
     runs-on: macos-latest
