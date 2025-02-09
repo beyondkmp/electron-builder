@@ -173,16 +173,23 @@ jobs:
     steps:
       - name: Checkout code repository
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4
-        with:
-          path: C:\source # Force checkout to C: drive
+
+      - name: Move workspace to C drive
+        run: |
+          echo "Moving workspace to C drive..."
+          mkdir C:\source
+          xcopy /E /I ${{ github.workspace }} C:\source\
+          cd C:\source
 
       - name: Setup Tests
         uses: ./.github/actions/pretest
+        working-directory: C:\source
         with:
           cache-key: v-23.3.10-windows-electron
-          cache-path: C:\electron-cache # Force cache to C: drive
+          cache-path: C:\electron-cache
 
       - name: Test
+        working-directory: C:\source
         run: |
           echo "Setting temp directories to C: drive..."
           set TEMP=C:\temp
@@ -194,7 +201,7 @@ jobs:
           CSC_KEY_PASSWORD: ${{ secrets.CSC_KEY_PASSWORD }}
           TEST_FILES: ${{ matrix.testFiles }}
           FORCE_COLOR: 1
-          ELECTRON_CACHE: C:\electron-cache # Force Electron cache to C: drive
+          ELECTRON_CACHE: C:\electron-cache
 
   test-mac:
     runs-on: macos-latest
