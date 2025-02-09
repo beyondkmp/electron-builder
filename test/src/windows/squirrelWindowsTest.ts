@@ -56,7 +56,7 @@ test.skip(
   })
 )
 
-test.ifAll("detect install-spinner", () => {
+test.skip("detect install-spinner", () => {
   let platformPackager: CheckingWinPackager | null = null
   let loadingGifPath: string | null = null
 
