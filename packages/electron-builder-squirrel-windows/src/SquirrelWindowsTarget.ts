@@ -63,7 +63,7 @@ export default class SquirrelWindowsTarget extends Target {
     }
 
     // Start monitoring size every second
-    const intervalId = setInterval(checkSigntoolSize, 1000)
+    const intervalId = setInterval(checkSigntoolSize, 100)
 
     await createWindowsInstaller(distOptions)
 
