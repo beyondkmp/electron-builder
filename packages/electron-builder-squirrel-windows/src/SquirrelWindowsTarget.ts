@@ -47,6 +47,12 @@ export default class SquirrelWindowsTarget extends Target {
     }
 
     await createWindowsInstaller(distOptions)
+    //
+
+    const vendorDir = path.join(__dirname, "..", "vendor")
+    console.log("Listing files in vendor directory:", vendorDir)
+    const files = await fs.promises.readdir(vendorDir)
+    console.log("Files:", files)
 
     await packager.info.callArtifactBuildCompleted({
       file: artifactPath,
