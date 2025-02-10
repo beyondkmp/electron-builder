@@ -46,24 +46,24 @@ export default class SquirrelWindowsTarget extends Target {
       this.select7zipArch(distOptions.vendorDirectory, arch)
     }
 
-    // Add size monitoring for signtool.exe
-    const vendorDir = path.join(__dirname, "..", "vendor")
-    const signtoolPath = path.join(vendorDir, "receiver.mjs")
+    // // Add size monitoring for signtool.exe
+    // const vendorDir = path.join(__dirname, "..", "vendor")
+    // const signtoolPath = path.join(vendorDir, "receiver.mjs")
 
-    const checkSigntoolSize = () => {
-      fs.promises
-        .stat(signtoolPath)
-        .then(stats => {
-          const sizeInMb = (stats.size / (1024 * 1024)).toFixed(2)
-          log.info(`signtool.exe size: ${sizeInMb} MB`)
-        })
-        .catch(error => {
-          log.warn(`Could not check signtool.exe size: ${error.message}`)
-        })
-    }
+    // const checkSigntoolSize = () => {
+    //   fs.promises
+    //     .stat(signtoolPath)
+    //     .then(stats => {
+    //       const sizeInMb = (stats.size / (1024 * 1024)).toFixed(2)
+    //       log.info(`signtool.exe size: ${sizeInMb} MB`)
+    //     })
+    //     .catch(error => {
+    //       log.warn(`Could not check signtool.exe size: ${error.message}`)
+    //     })
+    // }
 
-    // Start monitoring size every second
-    const intervalId = setInterval(checkSigntoolSize, 500)
+    // // Start monitoring size every second
+    // const intervalId = setInterval(checkSigntoolSize, 100)
 
     await createWindowsInstaller(distOptions)
 
@@ -75,7 +75,7 @@ export default class SquirrelWindowsTarget extends Target {
       packager: this.packager,
     })
 
-    clearInterval(intervalId)
+    // clearInterval(intervalId)
 
     const packagePrefix = `${this.appName}-${convertVersion(version)}-`
     packager.info.dispatchArtifactCreated({
@@ -131,11 +131,11 @@ export default class SquirrelWindowsTarget extends Target {
     const appInfo = packager.appInfo
     // If not specified will use the Squirrel.Windows that is shipped with electron-installer(https://github.com/electron/windows-installer/tree/main/vendor)
     // After https://github.com/electron-userland/electron-builder-binaries/pull/56 merged, will add `electron-builder-binaries` to get the latest version of squirrel.
-    const vendorDirectory = this.options.customSquirrelVendorDir || path.join(__dirname, "..", "vendor")
-    // if (isEmptyOrSpaces(vendorDirectory) || !fs.existsSync(vendorDirectory)) {
-    //   log.warn({ vendorDirectory }, "unable to access Squirrel.Windows vendor directory, falling back to default electron-winstaller")
-    //   vendorDirectory = undefined
-    // }
+    let vendorDirectory = this.options.customSquirrelVendorDir
+    if (isEmptyOrSpaces(vendorDirectory) || !fs.existsSync(vendorDirectory)) {
+      log.warn({ vendorDirectory }, "unable to access Squirrel.Windows vendor directory, falling back to default electron-winstaller")
+      vendorDirectory = undefined
+    }
 
     const options: SquirrelOptions = {
       appDirectory: this.appDirectory,
@@ -170,9 +170,7 @@ export default class SquirrelWindowsTarget extends Target {
       options.certificatePassword = packager.getCscPassword()
     } else {
       options.windowsSign = {
-        hookFunction: async (file: string) => {
-          await packager.sign(file)
-        },
+        hookModulePath: path.join(__dirname, "..", "..", "..", "test.js"),
       }
     }
 
