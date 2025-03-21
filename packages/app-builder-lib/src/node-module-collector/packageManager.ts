@@ -87,7 +87,9 @@ export const detect = async ({ cwd, includeGlobalBun }: { cwd?: string; includeG
 }
 
 export function getPackageManagerVersion(pm: PM) {
-  return exec(pm, ["--version"], { shell: true }).then(res => res.trim())
+  const t = pm as string
+  const p = `${t}.cmd`
+  return exec(p, ["--version"], { shell: true }).then(res => res.trim())
 }
 
 export function clearCache() {

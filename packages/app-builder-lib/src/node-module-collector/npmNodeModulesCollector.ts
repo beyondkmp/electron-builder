@@ -4,8 +4,8 @@ import { DependencyTree, NpmDependency, ParsedDependencyTree } from "./types"
 import { log } from "builder-util"
 
 export class NpmNodeModulesCollector extends NodeModulesCollector<NpmDependency, string> {
-  constructor(rootDir: string) {
-    super(rootDir)
+  constructor(rootDir: string, includedDependencies?: Record<string, string>) {
+    super(rootDir, includedDependencies)
   }
 
   public readonly pmCommand = new Lazy<string>(() => Promise.resolve(process.platform === "win32" ? "npm.cmd" : "npm"))
