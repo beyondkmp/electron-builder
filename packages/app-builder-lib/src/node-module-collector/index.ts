@@ -4,6 +4,8 @@ import { YarnNodeModulesCollector } from "./yarnNodeModulesCollector"
 import { detect, PM, getPackageManagerVersion } from "./packageManager"
 import { NodeModuleInfo } from "./types"
 import { exec } from "builder-util"
+import * as path from "path"
+import { Dependency } from "./types"
 
 async function isPnpmProjectHoisted(rootDir: string) {
   const command = await PnpmNodeModulesCollector.pmCommand.value
@@ -12,26 +14,40 @@ async function isPnpmProjectHoisted(rootDir: string) {
   return lines["node-linker"] === "hoisted"
 }
 
-export async function getCollectorByPackageManager(rootDir: string) {
+export async function getCollectorByPackageManager(rootDir: string, realDependencies?: Record<string, string>) {
   const manager: PM = await detect({ cwd: rootDir })
   switch (manager) {
     case "pnpm":
       if (await isPnpmProjectHoisted(rootDir)) {
-        return new NpmNodeModulesCollector(rootDir)
+        return new NpmNodeModulesCollector(rootDir, realDependencies)
       }
-      return new PnpmNodeModulesCollector(rootDir)
+      return new PnpmNodeModulesCollector(rootDir, realDependencies)
     case "npm":
-      return new NpmNodeModulesCollector(rootDir)
+      return new NpmNodeModulesCollector(rootDir, realDependencies)
     case "yarn":
-      return new YarnNodeModulesCollector(rootDir)
+      return new YarnNodeModulesCollector(rootDir, realDependencies)
     default:
-      return new NpmNodeModulesCollector(rootDir)
+      return new NpmNodeModulesCollector(rootDir, realDependencies)
   }
 }
 
-export async function getNodeModules(rootDir: string): Promise<NodeModuleInfo[]> {
-  const collector = await getCollectorByPackageManager(rootDir)
-  return collector.getNodeModules()
+export async function getNodeModules(appDir: string, projectDir?: string): Promise<NodeModuleInfo[]> {
+  if (!projectDir) {
+    return (await getCollectorByPackageManager(appDir)).getNodeModules()
+  }
+
+  const projectPackageJson: Dependency<string, string> = require(path.join(projectDir, "package.json"))
+
+  if (projectPackageJson.workspaces) {
+    return (await getCollectorByPackageManager(appDir)).getNodeModules()
+  }
+
+  const appPackageJson: Dependency<string, string> = require(path.join(appDir, "package.json"))
+  if (appPackageJson.dependencies) {
+    return (await getCollectorByPackageManager(projectDir, appPackageJson.dependencies)).getNodeModules()
+  }
+
+  return (await getCollectorByPackageManager(projectDir)).getNodeModules()
 }
 
 export { detect, getPackageManagerVersion, PM }

@@ -5,8 +5,8 @@ import * as path from "path"
 import { exec, log } from "builder-util"
 
 export class PnpmNodeModulesCollector extends NodeModulesCollector<PnpmDependency, PnpmDependency> {
-  constructor(rootDir: string) {
-    super(rootDir)
+  constructor(rootDir: string, includedDependencies?: Record<string, string>) {
+    super(rootDir, includedDependencies)
   }
 
   static readonly pmCommand = new Lazy<string>(async () => {

@@ -1,8 +1,8 @@
 import { NpmNodeModulesCollector } from "./npmNodeModulesCollector"
 
 export class YarnNodeModulesCollector extends NpmNodeModulesCollector {
-  constructor(rootDir: string) {
-    super(rootDir)
+  constructor(rootDir: string, includedDependencies?: Record<string, string>) {
+    super(rootDir, includedDependencies)
   }
 
   public readonly installOptions = Promise.resolve({

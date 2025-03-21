@@ -10,7 +10,10 @@ export abstract class NodeModulesCollector<T extends Dependency<T, OptionalsType
   protected dependencyPathMap: Map<string, string> = new Map()
   protected allDependencies: Map<string, T> = new Map()
 
-  constructor(private readonly rootDir: string) {}
+  constructor(
+    private readonly rootDir: string,
+    private readonly includedDependencies?: Record<string, string>
+  ) {}
 
   public async getNodeModules(): Promise<NodeModuleInfo[]> {
     const tree: T = await this.getDependenciesTree()
@@ -146,17 +149,29 @@ export abstract class NodeModulesCollector<T extends Dependency<T, OptionalsType
   }
 
   private getTreeFromWorkspaces(tree: T): T {
+    let result: T = tree
     if (tree.workspaces && tree.dependencies) {
       const packageJson: Dependency<string, string> = require(path.join(this.rootDir, "package.json"))
       const dependencyName = packageJson.name
       for (const [key, value] of Object.entries(tree.dependencies)) {
         if (key === dependencyName) {
-          return value
+          result = value
+          break
         }
       }
     }
 
-    return tree
+    if (this.includedDependencies) {
+      if (tree.dependencies) {
+        for (const key of Object.keys(tree.dependencies)) {
+          if (!this.includedDependencies[key]) {
+            delete tree.dependencies[key]
+          }
+        }
+      }
+    }
+
+    return result
   }
 
   private transToHoisterTree(obj: DependencyGraph, key: string = `.`, nodes: Map<string, HoisterTree> = new Map()): HoisterTree {
