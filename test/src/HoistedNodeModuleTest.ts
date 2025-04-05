@@ -2,6 +2,8 @@ import { assertPack, linuxDirTarget, verifyAsarFileTree, modifyPackageJson } fro
 import { Platform, Arch, DIR_TARGET } from "electron-builder"
 import { outputFile } from "fs-extra"
 import * as path from "path"
+import { copy, readJSON, writeJSON } from "fs-extra";
+import { spawn } from "builder-util/out/util"
 
 test("yarn workspace", ({ expect }) =>
   assertPack(
@@ -78,6 +80,27 @@ test("yarn two package.json", ({ expect }) =>
       targets: linuxDirTarget,
     },
     {
+      isInstallDepsBefore: true,
+      projectDirCreated: async (projectDir, tmpDir) => {
+        await spawn("npm", ["install"], {
+          cwd: projectDir,
+        })
+
+        copy("node_modules", path.join(projectDir, "node_modules"));
+        copy("package.json", path.join(projectDir, "package.json"));
+
+        const packageJson = await readJSON(path.join(projectDir,"app", "package.json"), "utf8");
+        packageJson.main = "index.js";
+        delete packageJson.types;
+        delete packageJson.scripts;
+        delete packageJson.devDependencies;
+
+        await writeJSON(path.join(projectDir,'app', "package.json"), packageJson, {
+          encoding: "utf8",
+          spaces: 2,
+        });
+
+      },
       packed: context => verifyAsarFileTree(expect, context.getResources(Platform.LINUX)),
     }
   ))
