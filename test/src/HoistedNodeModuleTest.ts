@@ -81,9 +81,9 @@ test("yarn two package.json", ({ expect }) =>
     },
     {
       isInstallDepsBefore: true,
-      projectDirCreated: async (projectDir, tmpDir) => {
-        copy(path.join(projectDir,"node_modules"), path.join(projectDir,"app", "node_modules"));
-        copy(path.join(projectDir,"app", "package.json"), path.join(projectDir,"app", "package.json"));
+      projectDirCreated: async (projectDir) => {
+        copy(path.join(projectDir, "node_modules"), path.join(projectDir, "app", "node_modules"));
+        copy(path.join(projectDir, "package.json"), path.join(projectDir, "app", "package.json"));
 
         const packageJson = await readJSON(path.join(projectDir, "app", "package.json"), "utf8");
         packageJson.main = "index.js";
@@ -91,7 +91,7 @@ test("yarn two package.json", ({ expect }) =>
         delete packageJson.scripts;
         delete packageJson.devDependencies;
 
-        await writeJSON(path.join(projectDir,'app', "package.json"), packageJson, {
+        await writeJSON(path.join(projectDir, 'app', "package.json"), packageJson, {
           encoding: "utf8",
           spaces: 2,
         });
