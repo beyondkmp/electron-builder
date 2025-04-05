@@ -70,6 +70,18 @@ test("yarn two package.json w/ native module", ({ expect }) =>
     }
   ))
 
+test("yarn two package.json", ({ expect }) =>
+  assertPack(
+    expect,
+    "test-app-two-package-json",
+    {
+      targets: linuxDirTarget,
+    },
+    {
+      packed: context => verifyAsarFileTree(expect, context.getResources(Platform.LINUX)),
+    }
+  ))
+
 describe("isInstallDepsBefore=true", { sequential: true }, () => {
   test("yarn workspace for scope name", ({ expect }) =>
     assertPack(
@@ -168,7 +180,8 @@ describe("isInstallDepsBefore=true", { sequential: true }, () => {
         },
         packed: context => verifyAsarFileTree(expect, context.getResources(Platform.LINUX)),
       }
-    ))
+    )
+  )
 
   test("yarn electron-clear-data", ({ expect }) =>
     assertPack(
