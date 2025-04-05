@@ -21,7 +21,6 @@
   "build": {
     "appId": "org.electron-builder.testApp2",
     "compression": "store",
-    "npmRebuild": true,
     "directories": {
       "app": "app"
     },

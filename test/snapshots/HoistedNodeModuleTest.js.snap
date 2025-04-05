@@ -65028,6 +65028,4871 @@ exports[`yarn several workspaces and asarUnpack 2`] = `
 }
 `;
 
+exports[`yarn two package.json 1`] = `
+{
+  "linux": [],
+}
+`;
+
+exports[`yarn two package.json 2`] = `
+{
+  "files": {
+    "index.html": {
+      "offset": "4525083",
+      "size": 841,
+    },
+    "index.js": {
+      "offset": "4525924",
+      "size": 2501,
+    },
+    "node_modules": {
+      "files": {
+        "@yarnpkg": {
+          "files": {
+            "lockfile": {
+              "files": {
+                "index.js": {
+                  "offset": "0",
+                  "size": 279022,
+                },
+                "package.json": {
+                  "offset": "279022",
+                  "size": 250,
+                },
+              },
+            },
+          },
+        },
+        "accepts": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "279272",
+              "size": 5096,
+            },
+            "LICENSE": {
+              "offset": "284368",
+              "size": 1167,
+            },
+            "index.js": {
+              "offset": "285535",
+              "size": 5252,
+            },
+            "package.json": {
+              "offset": "290787",
+              "size": 690,
+            },
+          },
+        },
+        "ansi-styles": {
+          "files": {
+            "index.js": {
+              "offset": "291477",
+              "size": 4139,
+            },
+            "license": {
+              "offset": "295616",
+              "size": 1109,
+            },
+            "package.json": {
+              "offset": "296725",
+              "size": 663,
+            },
+          },
+        },
+        "argparse": {
+          "files": {
+            "LICENSE": {
+              "offset": "297388",
+              "size": 12775,
+            },
+            "argparse.js": {
+              "offset": "310163",
+              "size": 129714,
+            },
+            "lib": {
+              "files": {
+                "sub.js": {
+                  "offset": "439877",
+                  "size": 2252,
+                },
+                "textwrap.js": {
+                  "offset": "442129",
+                  "size": 17391,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "459520",
+              "size": 448,
+            },
+          },
+        },
+        "array-flatten": {
+          "files": {
+            "LICENSE": {
+              "offset": "459968",
+              "size": 1103,
+            },
+            "array-flatten.js": {
+              "offset": "461071",
+              "size": 1195,
+            },
+            "package.json": {
+              "offset": "462266",
+              "size": 651,
+            },
+          },
+        },
+        "at-least-node": {
+          "files": {
+            "LICENSE": {
+              "offset": "462917",
+              "size": 770,
+            },
+            "index.js": {
+              "offset": "463687",
+              "size": 234,
+            },
+            "package.json": {
+              "offset": "463921",
+              "size": 536,
+            },
+          },
+        },
+        "body-parser": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "464457",
+              "size": 16729,
+            },
+            "LICENSE": {
+              "offset": "481186",
+              "size": 1172,
+            },
+            "SECURITY.md": {
+              "offset": "482358",
+              "size": 1193,
+            },
+            "index.js": {
+              "offset": "483551",
+              "size": 2681,
+            },
+            "lib": {
+              "files": {
+                "read.js": {
+                  "offset": "486232",
+                  "size": 4325,
+                },
+                "types": {
+                  "files": {
+                    "json.js": {
+                      "offset": "490557",
+                      "size": 5299,
+                    },
+                    "raw.js": {
+                      "offset": "495856",
+                      "size": 1884,
+                    },
+                    "text.js": {
+                      "offset": "497740",
+                      "size": 2285,
+                    },
+                    "urlencoded.js": {
+                      "offset": "500025",
+                      "size": 6404,
+                    },
+                  },
+                },
+              },
+            },
+            "package.json": {
+              "offset": "506429",
+              "size": 1061,
+            },
+          },
+        },
+        "braces": {
+          "files": {
+            "LICENSE": {
+              "offset": "507490",
+              "size": 1091,
+            },
+            "index.js": {
+              "offset": "508581",
+              "size": 4380,
+            },
+            "lib": {
+              "files": {
+                "compile.js": {
+                  "offset": "512961",
+                  "size": 1501,
+                },
+                "constants.js": {
+                  "offset": "514462",
+                  "size": 1589,
+                },
+                "expand.js": {
+                  "offset": "516051",
+                  "size": 2797,
+                },
+                "parse.js": {
+                  "offset": "518848",
+                  "size": 6899,
+                },
+                "stringify.js": {
+                  "offset": "525747",
+                  "size": 708,
+                },
+                "utils.js": {
+                  "offset": "526455",
+                  "size": 2518,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "528973",
+              "size": 902,
+            },
+          },
+        },
+        "builder-util-runtime": {
+          "files": {
+            "LICENSE": {
+              "offset": "529875",
+              "size": 1084,
+            },
+            "node_modules": {
+              "files": {
+                "debug": {
+                  "files": {
+                    "LICENSE": {
+                      "offset": "667276",
+                      "size": 1139,
+                    },
+                    "package.json": {
+                      "offset": "668415",
+                      "size": 936,
+                    },
+                    "src": {
+                      "files": {
+                        "browser.js": {
+                          "offset": "669351",
+                          "size": 6066,
+                        },
+                        "common.js": {
+                          "offset": "675417",
+                          "size": 6912,
+                        },
+                        "index.js": {
+                          "offset": "682329",
+                          "size": 314,
+                        },
+                        "node.js": {
+                          "offset": "682643",
+                          "size": 4728,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+            "out": {
+              "files": {
+                "CancellationToken.js": {
+                  "offset": "530959",
+                  "size": 3199,
+                },
+                "CancellationToken.js.map": {
+                  "offset": "534158",
+                  "size": 5648,
+                },
+                "MemoLazy.js": {
+                  "offset": "539806",
+                  "size": 1504,
+                },
+                "MemoLazy.js.map": {
+                  "offset": "541310",
+                  "size": 2756,
+                },
+                "ProgressCallbackTransform.js": {
+                  "offset": "544066",
+                  "size": 1949,
+                },
+                "ProgressCallbackTransform.js.map": {
+                  "offset": "546015",
+                  "size": 3693,
+                },
+                "blockMapApi.js": {
+                  "offset": "549708",
+                  "size": 116,
+                },
+                "blockMapApi.js.map": {
+                  "offset": "549824",
+                  "size": 403,
+                },
+                "error.js": {
+                  "offset": "550227",
+                  "size": 255,
+                },
+                "error.js.map": {
+                  "offset": "550482",
+                  "size": 454,
+                },
+                "httpExecutor.js": {
+                  "offset": "550936",
+                  "size": 17426,
+                },
+                "httpExecutor.js.map": {
+                  "offset": "568362",
+                  "size": 33728,
+                },
+                "index.js": {
+                  "offset": "602090",
+                  "size": 4396,
+                },
+                "index.js.map": {
+                  "offset": "606486",
+                  "size": 2657,
+                },
+                "publishOptions.js": {
+                  "offset": "609143",
+                  "size": 2213,
+                },
+                "publishOptions.js.map": {
+                  "offset": "611356",
+                  "size": 14910,
+                },
+                "retry.js": {
+                  "offset": "626266",
+                  "size": 884,
+                },
+                "retry.js.map": {
+                  "offset": "627150",
+                  "size": 1468,
+                },
+                "rfc2253Parser.js": {
+                  "offset": "628618",
+                  "size": 2264,
+                },
+                "rfc2253Parser.js.map": {
+                  "offset": "630882",
+                  "size": 4168,
+                },
+                "updateInfo.js": {
+                  "offset": "635050",
+                  "size": 115,
+                },
+                "updateInfo.js.map": {
+                  "offset": "635165",
+                  "size": 2316,
+                },
+                "uuid.js": {
+                  "offset": "637481",
+                  "size": 6393,
+                },
+                "uuid.js.map": {
+                  "offset": "643874",
+                  "size": 12236,
+                },
+                "xml.js": {
+                  "offset": "656110",
+                  "size": 3549,
+                },
+                "xml.js.map": {
+                  "offset": "659659",
+                  "size": 6987,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "666646",
+              "size": 630,
+            },
+          },
+        },
+        "bytes": {
+          "files": {
+            "History.md": {
+              "offset": "687371",
+              "size": 1775,
+            },
+            "LICENSE": {
+              "offset": "689146",
+              "size": 1153,
+            },
+            "index.js": {
+              "offset": "690299",
+              "size": 3613,
+            },
+            "package.json": {
+              "offset": "693912",
+              "size": 514,
+            },
+          },
+        },
+        "call-bind": {
+          "files": {
+            ".eslintignore": {
+              "offset": "694426",
+              "size": 10,
+            },
+            ".nycrc": {
+              "offset": "694436",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "694575",
+              "size": 1071,
+            },
+            "callBound.js": {
+              "offset": "695646",
+              "size": 413,
+            },
+            "index.js": {
+              "offset": "696059",
+              "size": 643,
+            },
+            "package.json": {
+              "offset": "696702",
+              "size": 1504,
+            },
+          },
+        },
+        "call-bind-apply-helpers": {
+          "files": {
+            ".nycrc": {
+              "offset": "698206",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "698345",
+              "size": 1071,
+            },
+            "actualApply.js": {
+              "offset": "699416",
+              "size": 280,
+            },
+            "applyBind.js": {
+              "offset": "699696",
+              "size": 264,
+            },
+            "functionApply.js": {
+              "offset": "699960",
+              "size": 99,
+            },
+            "functionCall.js": {
+              "offset": "700059",
+              "size": 97,
+            },
+            "index.js": {
+              "offset": "700156",
+              "size": 511,
+            },
+            "package.json": {
+              "offset": "700667",
+              "size": 1842,
+            },
+            "reflectApply.js": {
+              "offset": "702509",
+              "size": 132,
+            },
+            "tsconfig.json": {
+              "offset": "702641",
+              "size": 115,
+            },
+          },
+        },
+        "call-bound": {
+          "files": {
+            ".nycrc": {
+              "offset": "702756",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "702895",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "703966",
+              "size": 687,
+            },
+            "package.json": {
+              "offset": "704653",
+              "size": 1689,
+            },
+            "tsconfig.json": {
+              "offset": "706342",
+              "size": 137,
+            },
+          },
+        },
+        "chalk": {
+          "files": {
+            "license": {
+              "offset": "706479",
+              "size": 1109,
+            },
+            "package.json": {
+              "offset": "707588",
+              "size": 645,
+            },
+            "source": {
+              "files": {
+                "index.js": {
+                  "offset": "708233",
+                  "size": 6075,
+                },
+                "templates.js": {
+                  "offset": "714308",
+                  "size": 3367,
+                },
+                "util.js": {
+                  "offset": "717675",
+                  "size": 1035,
+                },
+              },
+            },
+          },
+        },
+        "ci-info": {
+          "files": {
+            "LICENSE": {
+              "offset": "718710",
+              "size": 1086,
+            },
+            "index.js": {
+              "offset": "719796",
+              "size": 2368,
+            },
+            "package.json": {
+              "offset": "722164",
+              "size": 750,
+            },
+            "vendors.json": {
+              "offset": "722914",
+              "size": 5720,
+            },
+          },
+        },
+        "content-disposition": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "728634",
+              "size": 1020,
+            },
+            "LICENSE": {
+              "offset": "729654",
+              "size": 1094,
+            },
+            "index.js": {
+              "offset": "730748",
+              "size": 10594,
+            },
+            "package.json": {
+              "offset": "741342",
+              "size": 785,
+            },
+          },
+        },
+        "content-type": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "742127",
+              "size": 523,
+            },
+            "LICENSE": {
+              "offset": "742650",
+              "size": 1089,
+            },
+            "index.js": {
+              "offset": "743739",
+              "size": 5002,
+            },
+            "package.json": {
+              "offset": "748741",
+              "size": 675,
+            },
+          },
+        },
+        "cookie": {
+          "files": {
+            "LICENSE": {
+              "offset": "749416",
+              "size": 1175,
+            },
+            "SECURITY.md": {
+              "offset": "750591",
+              "size": 1180,
+            },
+            "index.js": {
+              "offset": "751771",
+              "size": 8103,
+            },
+            "package.json": {
+              "offset": "759874",
+              "size": 629,
+            },
+          },
+        },
+        "cookie-signature": {
+          "files": {
+            "History.md": {
+              "offset": "760503",
+              "size": 695,
+            },
+            "index.js": {
+              "offset": "761198",
+              "size": 1230,
+            },
+            "package.json": {
+              "offset": "762428",
+              "size": 385,
+            },
+          },
+        },
+        "cross-spawn": {
+          "files": {
+            "LICENSE": {
+              "offset": "762813",
+              "size": 1105,
+            },
+            "index.js": {
+              "offset": "763918",
+              "size": 1192,
+            },
+            "lib": {
+              "files": {
+                "enoent.js": {
+                  "offset": "765110",
+                  "size": 1471,
+                },
+                "parse.js": {
+                  "offset": "766581",
+                  "size": 3065,
+                },
+                "util": {
+                  "files": {
+                    "escape.js": {
+                      "offset": "769646",
+                      "size": 1383,
+                    },
+                    "readShebang.js": {
+                      "offset": "771029",
+                      "size": 549,
+                    },
+                    "resolveCommand.js": {
+                      "offset": "771578",
+                      "size": 1557,
+                    },
+                  },
+                },
+              },
+            },
+            "package.json": {
+              "offset": "773135",
+              "size": 1275,
+            },
+          },
+        },
+        "debug": {
+          "files": {
+            "LICENSE": {
+              "offset": "774410",
+              "size": 1107,
+            },
+            "Makefile": {
+              "offset": "775517",
+              "size": 1059,
+            },
+            "component.json": {
+              "offset": "776576",
+              "size": 321,
+            },
+            "node.js": {
+              "offset": "776897",
+              "size": 40,
+            },
+            "package.json": {
+              "offset": "776937",
+              "size": 947,
+            },
+            "src": {
+              "files": {
+                "browser.js": {
+                  "offset": "777884",
+                  "size": 4734,
+                },
+                "debug.js": {
+                  "offset": "782618",
+                  "size": 4394,
+                },
+                "index.js": {
+                  "offset": "787012",
+                  "size": 263,
+                },
+                "inspector-log.js": {
+                  "offset": "787275",
+                  "size": 373,
+                },
+                "node.js": {
+                  "offset": "787648",
+                  "size": 6015,
+                },
+              },
+            },
+          },
+        },
+        "define-data-property": {
+          "files": {
+            ".nycrc": {
+              "offset": "793663",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "793879",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "794950",
+              "size": 2336,
+            },
+            "package.json": {
+              "offset": "797286",
+              "size": 2073,
+            },
+            "tsconfig.json": {
+              "offset": "799359",
+              "size": 4883,
+            },
+          },
+        },
+        "depd": {
+          "files": {
+            "History.md": {
+              "offset": "804242",
+              "size": 2256,
+            },
+            "LICENSE": {
+              "offset": "806498",
+              "size": 1094,
+            },
+            "index.js": {
+              "offset": "807592",
+              "size": 10932,
+            },
+            "lib": {
+              "files": {
+                "browser": {
+                  "files": {
+                    "index.js": {
+                      "offset": "818524",
+                      "size": 1512,
+                    },
+                  },
+                },
+              },
+            },
+            "package.json": {
+              "offset": "820036",
+              "size": 836,
+            },
+          },
+        },
+        "destroy": {
+          "files": {
+            "LICENSE": {
+              "offset": "820872",
+              "size": 1173,
+            },
+            "index.js": {
+              "offset": "822045",
+              "size": 4258,
+            },
+            "package.json": {
+              "offset": "826303",
+              "size": 732,
+            },
+          },
+        },
+        "ee-first": {
+          "files": {
+            "LICENSE": {
+              "offset": "827035",
+              "size": 1099,
+            },
+            "index.js": {
+              "offset": "828134",
+              "size": 1684,
+            },
+            "package.json": {
+              "offset": "829818",
+              "size": 466,
+            },
+          },
+        },
+        "electron-updater": {
+          "files": {
+            "LICENSE": {
+              "offset": "830284",
+              "size": 1084,
+            },
+            "out": {
+              "files": {
+                "AppAdapter.js": {
+                  "offset": "831368",
+                  "size": 740,
+                },
+                "AppAdapter.js.map": {
+                  "offset": "832108",
+                  "size": 1814,
+                },
+                "AppImageUpdater.js": {
+                  "offset": "833922",
+                  "size": 5402,
+                },
+                "AppImageUpdater.js.map": {
+                  "offset": "839324",
+                  "size": 8831,
+                },
+                "AppUpdater.js": {
+                  "offset": "848155",
+                  "size": 29849,
+                },
+                "AppUpdater.js.map": {
+                  "offset": "878004",
+                  "size": 52226,
+                },
+                "BaseUpdater.js": {
+                  "offset": "930230",
+                  "size": 6118,
+                },
+                "BaseUpdater.js.map": {
+                  "offset": "936348",
+                  "size": 10883,
+                },
+                "DebUpdater.js": {
+                  "offset": "947231",
+                  "size": 2150,
+                },
+                "DebUpdater.js.map": {
+                  "offset": "949381",
+                  "size": 3862,
+                },
+                "DownloadedUpdateHelper.js": {
+                  "offset": "953243",
+                  "size": 6907,
+                },
+                "DownloadedUpdateHelper.js.map": {
+                  "offset": "960150",
+                  "size": 12251,
+                },
+                "ElectronAppAdapter.js": {
+                  "offset": "972401",
+                  "size": 1180,
+                },
+                "ElectronAppAdapter.js.map": {
+                  "offset": "973581",
+                  "size": 2289,
+                },
+                "MacUpdater.js": {
+                  "offset": "975870",
+                  "size": 12563,
+                },
+                "MacUpdater.js.map": {
+                  "offset": "988433",
+                  "size": 20681,
+                },
+                "NsisUpdater.js": {
+                  "offset": "1009114",
+                  "size": 9414,
+                },
+                "NsisUpdater.js.map": {
+                  "offset": "1018528",
+                  "size": 15022,
+                },
+                "PacmanUpdater.js": {
+                  "offset": "1033550",
+                  "size": 2145,
+                },
+                "PacmanUpdater.js.map": {
+                  "offset": "1035695",
+                  "size": 3803,
+                },
+                "RpmUpdater.js": {
+                  "offset": "1039498",
+                  "size": 2470,
+                },
+                "RpmUpdater.js.map": {
+                  "offset": "1041968",
+                  "size": 4406,
+                },
+                "differentialDownloader": {
+                  "files": {
+                    "DataSplitter.js": {
+                      "offset": "1046374",
+                      "size": 7981,
+                    },
+                    "DataSplitter.js.map": {
+                      "offset": "1054355",
+                      "size": 14197,
+                    },
+                    "DifferentialDownloader.js": {
+                      "offset": "1068552",
+                      "size": 12607,
+                    },
+                    "DifferentialDownloader.js.map": {
+                      "offset": "1081159",
+                      "size": 21465,
+                    },
+                    "FileWithEmbeddedBlockMapDifferentialDownloader.js": {
+                      "offset": "1102624",
+                      "size": 1861,
+                    },
+                    "FileWithEmbeddedBlockMapDifferentialDownloader.js.map": {
+                      "offset": "1104485",
+                      "size": 3213,
+                    },
+                    "GenericDifferentialDownloader.js": {
+                      "offset": "1107698",
+                      "size": 524,
+                    },
+                    "GenericDifferentialDownloader.js.map": {
+                      "offset": "1108222",
+                      "size": 709,
+                    },
+                    "ProgressDifferentialDownloadCallbackTransform.js": {
+                      "offset": "1108931",
+                      "size": 3824,
+                    },
+                    "ProgressDifferentialDownloadCallbackTransform.js.map": {
+                      "offset": "1112755",
+                      "size": 6590,
+                    },
+                    "downloadPlanBuilder.js": {
+                      "offset": "1119345",
+                      "size": 5517,
+                    },
+                    "downloadPlanBuilder.js.map": {
+                      "offset": "1124862",
+                      "size": 10248,
+                    },
+                    "multipleRangeDownloader.js": {
+                      "offset": "1135110",
+                      "size": 4872,
+                    },
+                    "multipleRangeDownloader.js.map": {
+                      "offset": "1139982",
+                      "size": 8881,
+                    },
+                  },
+                },
+                "electronHttpExecutor.js": {
+                  "offset": "1148863",
+                  "size": 3258,
+                },
+                "electronHttpExecutor.js.map": {
+                  "offset": "1152121",
+                  "size": 5547,
+                },
+                "main.js": {
+                  "offset": "1157668",
+                  "size": 4643,
+                },
+                "main.js.map": {
+                  "offset": "1162311",
+                  "size": 4664,
+                },
+                "providerFactory.js": {
+                  "offset": "1166975",
+                  "size": 3189,
+                },
+                "providerFactory.js.map": {
+                  "offset": "1170164",
+                  "size": 5173,
+                },
+                "providers": {
+                  "files": {
+                    "BitbucketProvider.js": {
+                      "offset": "1175337",
+                      "size": 1969,
+                    },
+                    "BitbucketProvider.js.map": {
+                      "offset": "1177306",
+                      "size": 3454,
+                    },
+                    "GenericProvider.js": {
+                      "offset": "1180760",
+                      "size": 2252,
+                    },
+                    "GenericProvider.js.map": {
+                      "offset": "1183012",
+                      "size": 3777,
+                    },
+                    "GitHubProvider.js": {
+                      "offset": "1186789",
+                      "size": 9893,
+                    },
+                    "GitHubProvider.js.map": {
+                      "offset": "1196682",
+                      "size": 16996,
+                    },
+                    "KeygenProvider.js": {
+                      "offset": "1213678",
+                      "size": 2205,
+                    },
+                    "KeygenProvider.js.map": {
+                      "offset": "1215883",
+                      "size": 3892,
+                    },
+                    "PrivateGitHubProvider.js": {
+                      "offset": "1219775",
+                      "size": 4152,
+                    },
+                    "PrivateGitHubProvider.js.map": {
+                      "offset": "1223927",
+                      "size": 7789,
+                    },
+                    "Provider.js": {
+                      "offset": "1231716",
+                      "size": 5043,
+                    },
+                    "Provider.js.map": {
+                      "offset": "1236759",
+                      "size": 10016,
+                    },
+                  },
+                },
+                "types.js": {
+                  "offset": "1246775",
+                  "size": 1551,
+                },
+                "types.js.map": {
+                  "offset": "1248326",
+                  "size": 3619,
+                },
+                "util.js": {
+                  "offset": "1251945",
+                  "size": 1720,
+                },
+                "util.js.map": {
+                  "offset": "1253665",
+                  "size": 2847,
+                },
+                "windowsExecutableCodeSignatureVerifier.js": {
+                  "offset": "1256512",
+                  "size": 7435,
+                },
+                "windowsExecutableCodeSignatureVerifier.js.map": {
+                  "offset": "1263947",
+                  "size": 11200,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "1275147",
+              "size": 1040,
+            },
+          },
+        },
+        "encodeurl": {
+          "files": {
+            "LICENSE": {
+              "offset": "1276187",
+              "size": 1089,
+            },
+            "index.js": {
+              "offset": "1277276",
+              "size": 1578,
+            },
+            "package.json": {
+              "offset": "1278854",
+              "size": 613,
+            },
+          },
+        },
+        "es-define-property": {
+          "files": {
+            ".nycrc": {
+              "offset": "1279467",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "1279606",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "1280677",
+              "size": 288,
+            },
+            "package.json": {
+              "offset": "1280965",
+              "size": 1338,
+            },
+            "tsconfig.json": {
+              "offset": "1282303",
+              "size": 138,
+            },
+          },
+        },
+        "es-errors": {
+          "files": {
+            "LICENSE": {
+              "offset": "1282441",
+              "size": 1071,
+            },
+            "eval.js": {
+              "offset": "1283512",
+              "size": 75,
+            },
+            "index.js": {
+              "offset": "1283587",
+              "size": 66,
+            },
+            "package.json": {
+              "offset": "1283653",
+              "size": 1334,
+            },
+            "range.js": {
+              "offset": "1284987",
+              "size": 77,
+            },
+            "ref.js": {
+              "offset": "1285064",
+              "size": 79,
+            },
+            "syntax.js": {
+              "offset": "1285143",
+              "size": 79,
+            },
+            "tsconfig.json": {
+              "offset": "1285222",
+              "size": 3170,
+            },
+            "type.js": {
+              "offset": "1288392",
+              "size": 75,
+            },
+            "uri.js": {
+              "offset": "1288467",
+              "size": 73,
+            },
+          },
+        },
+        "es-object-atoms": {
+          "files": {
+            "LICENSE": {
+              "offset": "1288540",
+              "size": 1071,
+            },
+            "RequireObjectCoercible.js": {
+              "offset": "1289611",
+              "size": 313,
+            },
+            "ToObject.js": {
+              "offset": "1289924",
+              "size": 250,
+            },
+            "index.js": {
+              "offset": "1290174",
+              "size": 67,
+            },
+            "isObject.js": {
+              "offset": "1290241",
+              "size": 161,
+            },
+            "package.json": {
+              "offset": "1290402",
+              "size": 1423,
+            },
+            "tsconfig.json": {
+              "offset": "1291825",
+              "size": 81,
+            },
+          },
+        },
+        "escape-html": {
+          "files": {
+            "LICENSE": {
+              "offset": "1291906",
+              "size": 1157,
+            },
+            "index.js": {
+              "offset": "1293063",
+              "size": 1362,
+            },
+            "package.json": {
+              "offset": "1294425",
+              "size": 313,
+            },
+          },
+        },
+        "etag": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "1294738",
+              "size": 1732,
+            },
+            "LICENSE": {
+              "offset": "1296470",
+              "size": 1094,
+            },
+            "index.js": {
+              "offset": "1297564",
+              "size": 2479,
+            },
+            "package.json": {
+              "offset": "1300043",
+              "size": 712,
+            },
+          },
+        },
+        "express": {
+          "files": {
+            "History.md": {
+              "offset": "1300755",
+              "size": 115153,
+            },
+            "LICENSE": {
+              "offset": "1415908",
+              "size": 1249,
+            },
+            "index.js": {
+              "offset": "1417157",
+              "size": 224,
+            },
+            "lib": {
+              "files": {
+                "application.js": {
+                  "offset": "1417381",
+                  "size": 14593,
+                },
+                "express.js": {
+                  "offset": "1431974",
+                  "size": 2409,
+                },
+                "middleware": {
+                  "files": {
+                    "init.js": {
+                      "offset": "1434383",
+                      "size": 853,
+                    },
+                    "query.js": {
+                      "offset": "1435236",
+                      "size": 885,
+                    },
+                  },
+                },
+                "request.js": {
+                  "offset": "1436121",
+                  "size": 12505,
+                },
+                "response.js": {
+                  "offset": "1448626",
+                  "size": 28729,
+                },
+                "router": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1477355",
+                      "size": 15123,
+                    },
+                    "layer.js": {
+                      "offset": "1492478",
+                      "size": 3296,
+                    },
+                    "route.js": {
+                      "offset": "1495774",
+                      "size": 4399,
+                    },
+                  },
+                },
+                "utils.js": {
+                  "offset": "1500173",
+                  "size": 5871,
+                },
+                "view.js": {
+                  "offset": "1506044",
+                  "size": 3325,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "1509369",
+              "size": 1802,
+            },
+          },
+        },
+        "finalhandler": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "1511171",
+              "size": 4549,
+            },
+            "LICENSE": {
+              "offset": "1515720",
+              "size": 1119,
+            },
+            "SECURITY.md": {
+              "offset": "1516839",
+              "size": 1202,
+            },
+            "index.js": {
+              "offset": "1518041",
+              "size": 6768,
+            },
+            "package.json": {
+              "offset": "1524809",
+              "size": 969,
+            },
+          },
+        },
+        "find-yarn-workspace-root": {
+          "files": {
+            "LICENSE": {
+              "offset": "1525778",
+              "size": 11342,
+            },
+            "index.js": {
+              "offset": "1537120",
+              "size": 1320,
+            },
+            "package.json": {
+              "offset": "1538440",
+              "size": 675,
+            },
+          },
+        },
+        "forwarded": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "1539115",
+              "size": 400,
+            },
+            "LICENSE": {
+              "offset": "1539515",
+              "size": 1094,
+            },
+            "index.js": {
+              "offset": "1540609",
+              "size": 1578,
+            },
+            "package.json": {
+              "offset": "1542187",
+              "size": 654,
+            },
+          },
+        },
+        "fresh": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "1542841",
+              "size": 1500,
+            },
+            "LICENSE": {
+              "offset": "1544341",
+              "size": 1174,
+            },
+            "index.js": {
+              "offset": "1545515",
+              "size": 2711,
+            },
+            "package.json": {
+              "offset": "1548226",
+              "size": 727,
+            },
+          },
+        },
+        "fs-extra": {
+          "files": {
+            "LICENSE": {
+              "offset": "1548953",
+              "size": 1084,
+            },
+            "lib": {
+              "files": {
+                "copy": {
+                  "files": {
+                    "copy-sync.js": {
+                      "offset": "1550037",
+                      "size": 5776,
+                    },
+                    "copy.js": {
+                      "offset": "1555813",
+                      "size": 7756,
+                    },
+                    "index.js": {
+                      "offset": "1563569",
+                      "size": 147,
+                    },
+                  },
+                },
+                "empty": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1563716",
+                      "size": 747,
+                    },
+                  },
+                },
+                "ensure": {
+                  "files": {
+                    "file.js": {
+                      "offset": "1564463",
+                      "size": 1709,
+                    },
+                    "index.js": {
+                      "offset": "1566172",
+                      "size": 542,
+                    },
+                    "link.js": {
+                      "offset": "1566714",
+                      "size": 1652,
+                    },
+                    "symlink-paths.js": {
+                      "offset": "1568366",
+                      "size": 3374,
+                    },
+                    "symlink-type.js": {
+                      "offset": "1571740",
+                      "size": 694,
+                    },
+                    "symlink.js": {
+                      "offset": "1572434",
+                      "size": 2522,
+                    },
+                  },
+                },
+                "fs": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1574956",
+                      "size": 3373,
+                    },
+                  },
+                },
+                "index.js": {
+                  "offset": "1578329",
+                  "size": 358,
+                },
+                "json": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1578687",
+                      "size": 508,
+                    },
+                    "jsonfile.js": {
+                      "offset": "1579195",
+                      "size": 238,
+                    },
+                    "output-json-sync.js": {
+                      "offset": "1579433",
+                      "size": 276,
+                    },
+                    "output-json.js": {
+                      "offset": "1579709",
+                      "size": 277,
+                    },
+                  },
+                },
+                "mkdirs": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1579986",
+                      "size": 328,
+                    },
+                    "make-dir.js": {
+                      "offset": "1580314",
+                      "size": 545,
+                    },
+                    "utils.js": {
+                      "offset": "1580859",
+                      "size": 1655,
+                    },
+                  },
+                },
+                "move": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1582514",
+                      "size": 147,
+                    },
+                    "move-sync.js": {
+                      "offset": "1582661",
+                      "size": 1485,
+                    },
+                    "move.js": {
+                      "offset": "1584146",
+                      "size": 2010,
+                    },
+                  },
+                },
+                "output-file": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1586156",
+                      "size": 947,
+                    },
+                  },
+                },
+                "path-exists": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1587103",
+                      "size": 263,
+                    },
+                  },
+                },
+                "remove": {
+                  "files": {
+                    "index.js": {
+                      "offset": "1587366",
+                      "size": 489,
+                    },
+                    "rimraf.js": {
+                      "offset": "1587855",
+                      "size": 7443,
+                    },
+                  },
+                },
+                "util": {
+                  "files": {
+                    "stat.js": {
+                      "offset": "1595298",
+                      "size": 5226,
+                    },
+                    "utimes.js": {
+                      "offset": "1600524",
+                      "size": 615,
+                    },
+                  },
+                },
+              },
+            },
+            "package.json": {
+              "offset": "1601139",
+              "size": 950,
+            },
+          },
+        },
+        "fs.realpath": {
+          "files": {
+            "LICENSE": {
+              "offset": "1602089",
+              "size": 2125,
+            },
+            "index.js": {
+              "offset": "1604214",
+              "size": 1308,
+            },
+            "old.js": {
+              "offset": "1605522",
+              "size": 8542,
+            },
+            "package.json": {
+              "offset": "1614064",
+              "size": 460,
+            },
+          },
+        },
+        "function-bind": {
+          "files": {
+            ".nycrc": {
+              "offset": "1614524",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "1614740",
+              "size": 1052,
+            },
+            "implementation.js": {
+              "offset": "1615792",
+              "size": 2043,
+            },
+            "index.js": {
+              "offset": "1617835",
+              "size": 126,
+            },
+            "package.json": {
+              "offset": "1617961",
+              "size": 1329,
+            },
+          },
+        },
+        "get-intrinsic": {
+          "files": {
+            ".nycrc": {
+              "offset": "1619290",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "1619429",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "1620500",
+              "size": 14439,
+            },
+            "package.json": {
+              "offset": "1634939",
+              "size": 1864,
+            },
+          },
+        },
+        "get-proto": {
+          "files": {
+            ".nycrc": {
+              "offset": "1636803",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "1636942",
+              "size": 1071,
+            },
+            "Object.getPrototypeOf.js": {
+              "offset": "1638013",
+              "size": 156,
+            },
+            "Reflect.getPrototypeOf.js": {
+              "offset": "1638169",
+              "size": 150,
+            },
+            "index.js": {
+              "offset": "1638319",
+              "size": 821,
+            },
+            "package.json": {
+              "offset": "1639140",
+              "size": 1425,
+            },
+            "tsconfig.json": {
+              "offset": "1640565",
+              "size": 118,
+            },
+          },
+        },
+        "glob": {
+          "files": {
+            "LICENSE": {
+              "offset": "1640683",
+              "size": 976,
+            },
+            "common.js": {
+              "offset": "1641659",
+              "size": 6149,
+            },
+            "glob.js": {
+              "offset": "1647808",
+              "size": 19445,
+            },
+            "package.json": {
+              "offset": "1667253",
+              "size": 915,
+            },
+            "sync.js": {
+              "offset": "1668168",
+              "size": 12020,
+            },
+          },
+        },
+        "gopd": {
+          "files": {
+            "LICENSE": {
+              "offset": "1680188",
+              "size": 1071,
+            },
+            "gOPD.js": {
+              "offset": "1681259",
+              "size": 97,
+            },
+            "index.js": {
+              "offset": "1681356",
+              "size": 206,
+            },
+            "package.json": {
+              "offset": "1681562",
+              "size": 1309,
+            },
+            "tsconfig.json": {
+              "offset": "1682871",
+              "size": 116,
+            },
+          },
+        },
+        "graceful-fs": {
+          "files": {
+            "LICENSE": {
+              "offset": "1682987",
+              "size": 791,
+            },
+            "clone.js": {
+              "offset": "1683778",
+              "size": 496,
+            },
+            "graceful-fs.js": {
+              "offset": "1684274",
+              "size": 12680,
+            },
+            "legacy-streams.js": {
+              "offset": "1696954",
+              "size": 2655,
+            },
+            "package.json": {
+              "offset": "1699609",
+              "size": 600,
+            },
+            "polyfills.js": {
+              "offset": "1700209",
+              "size": 10141,
+            },
+          },
+        },
+        "has-property-descriptors": {
+          "files": {
+            ".nycrc": {
+              "offset": "1710350",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "1710489",
+              "size": 1067,
+            },
+            "index.js": {
+              "offset": "1711556",
+              "size": 588,
+            },
+            "package.json": {
+              "offset": "1712144",
+              "size": 1329,
+            },
+          },
+        },
+        "has-symbols": {
+          "files": {
+            ".nycrc": {
+              "offset": "1713473",
+              "size": 139,
+            },
+            "LICENSE": {
+              "offset": "1713612",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "1714683",
+              "size": 447,
+            },
+            "package.json": {
+              "offset": "1715130",
+              "size": 1792,
+            },
+            "shams.js": {
+              "offset": "1716922",
+              "size": 1922,
+            },
+            "tsconfig.json": {
+              "offset": "1718844",
+              "size": 143,
+            },
+          },
+        },
+        "hasown": {
+          "files": {
+            ".nycrc": {
+              "offset": "1718987",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "1719203",
+              "size": 1083,
+            },
+            "index.js": {
+              "offset": "1720286",
+              "size": 206,
+            },
+            "package.json": {
+              "offset": "1720492",
+              "size": 1474,
+            },
+            "tsconfig.json": {
+              "offset": "1721966",
+              "size": 73,
+            },
+          },
+        },
+        "http-errors": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "1722039",
+              "size": 3973,
+            },
+            "LICENSE": {
+              "offset": "1726012",
+              "size": 1168,
+            },
+            "index.js": {
+              "offset": "1727180",
+              "size": 6391,
+            },
+            "package.json": {
+              "offset": "1733571",
+              "size": 830,
+            },
+          },
+        },
+        "iconv-lite": {
+          "files": {
+            "LICENSE": {
+              "offset": "1734401",
+              "size": 1064,
+            },
+            "encodings": {
+              "files": {
+                "dbcs-codec.js": {
+                  "offset": "1735465",
+                  "size": 21415,
+                },
+                "dbcs-data.js": {
+                  "offset": "1756880",
+                  "size": 8291,
+                },
+                "index.js": {
+                  "offset": "1765171",
+                  "size": 710,
+                },
+                "internal.js": {
+                  "offset": "1765881",
+                  "size": 6115,
+                },
+                "sbcs-codec.js": {
+                  "offset": "1771996",
+                  "size": 2191,
+                },
+                "sbcs-data-generated.js": {
+                  "offset": "1774187",
+                  "size": 32034,
+                },
+                "sbcs-data.js": {
+                  "offset": "1806221",
+                  "size": 4686,
+                },
+                "tables": {
+                  "files": {
+                    "big5-added.json": {
+                      "offset": "1810907",
+                      "size": 17717,
+                    },
+                    "cp936.json": {
+                      "offset": "1828624",
+                      "size": 47320,
+                    },
+                    "cp949.json": {
+                      "offset": "1875944",
+                      "size": 38122,
+                    },
+                    "cp950.json": {
+                      "offset": "1914066",
+                      "size": 42356,
+                    },
+                    "eucjp.json": {
+                      "offset": "1956422",
+                      "size": 41064,
+                    },
+                    "gb18030-ranges.json": {
+                      "offset": "1997486",
+                      "size": 2216,
+                    },
+                    "gbk-added.json": {
+                      "offset": "1999702",
+                      "size": 1227,
+                    },
+                    "shiftjis.json": {
+                      "offset": "2000929",
+                      "size": 23782,
+                    },
+                  },
+                },
+                "utf16.js": {
+                  "offset": "2024711",
+                  "size": 5011,
+                },
+                "utf7.js": {
+                  "offset": "2029722",
+                  "size": 9215,
+                },
+              },
+            },
+            "lib": {
+              "files": {
+                "bom-handling.js": {
+                  "offset": "2038937",
+                  "size": 1109,
+                },
+                "extend-node.js": {
+                  "offset": "2040046",
+                  "size": 8701,
+                },
+                "index.js": {
+                  "offset": "2048747",
+                  "size": 5123,
+                },
+                "streams.js": {
+                  "offset": "2053870",
+                  "size": 3387,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "2057257",
+              "size": 782,
+            },
+          },
+        },
+        "inflight": {
+          "files": {
+            "LICENSE": {
+              "offset": "2058039",
+              "size": 748,
+            },
+            "inflight.js": {
+              "offset": "2058787",
+              "size": 1365,
+            },
+            "package.json": {
+              "offset": "2060152",
+              "size": 533,
+            },
+          },
+        },
+        "inherits": {
+          "files": {
+            "LICENSE": {
+              "offset": "2060685",
+              "size": 749,
+            },
+            "inherits.js": {
+              "offset": "2061434",
+              "size": 250,
+            },
+            "inherits_browser.js": {
+              "offset": "2061684",
+              "size": 753,
+            },
+            "package.json": {
+              "offset": "2062437",
+              "size": 394,
+            },
+          },
+        },
+        "ipaddr.js": {
+          "files": {
+            "LICENSE": {
+              "offset": "2062831",
+              "size": 1087,
+            },
+            "ipaddr.min.js": {
+              "offset": "2063918",
+              "size": 9738,
+            },
+            "lib": {
+              "files": {
+                "ipaddr.js": {
+                  "offset": "2073656",
+                  "size": 19333,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "2092989",
+              "size": 614,
+            },
+          },
+        },
+        "is-docker": {
+          "files": {
+            "cli.js": {
+              "executable": true,
+              "offset": "2093603",
+              "size": 105,
+            },
+            "index.js": {
+              "offset": "2093708",
+              "size": 449,
+            },
+            "license": {
+              "offset": "2094157",
+              "size": 1117,
+            },
+            "package.json": {
+              "offset": "2095274",
+              "size": 604,
+            },
+          },
+        },
+        "is-wsl": {
+          "files": {
+            "index.js": {
+              "offset": "2095878",
+              "size": 558,
+            },
+            "license": {
+              "offset": "2096436",
+              "size": 1109,
+            },
+            "package.json": {
+              "offset": "2097545",
+              "size": 613,
+            },
+          },
+        },
+        "isarray": {
+          "files": {
+            "LICENSE": {
+              "offset": "2098158",
+              "size": 1096,
+            },
+            "index.js": {
+              "offset": "2099254",
+              "size": 132,
+            },
+            "package.json": {
+              "offset": "2099386",
+              "size": 880,
+            },
+          },
+        },
+        "js-yaml": {
+          "files": {
+            "LICENSE": {
+              "offset": "2100266",
+              "size": 1084,
+            },
+            "bin": {
+              "files": {
+                "js-yaml.js": {
+                  "executable": true,
+                  "offset": "2101350",
+                  "size": 2736,
+                },
+              },
+            },
+            "dist": {
+              "files": {
+                "js-yaml.js": {
+                  "offset": "2104086",
+                  "size": 114359,
+                },
+                "js-yaml.min.js": {
+                  "offset": "2218445",
+                  "size": 39430,
+                },
+                "js-yaml.mjs": {
+                  "offset": "2257875",
+                  "size": 107533,
+                },
+              },
+            },
+            "index.js": {
+              "offset": "2365408",
+              "size": 1793,
+            },
+            "lib": {
+              "files": {
+                "common.js": {
+                  "offset": "2367201",
+                  "size": 1177,
+                },
+                "dumper.js": {
+                  "offset": "2368378",
+                  "size": 31893,
+                },
+                "exception.js": {
+                  "offset": "2400271",
+                  "size": 1299,
+                },
+                "loader.js": {
+                  "offset": "2401570",
+                  "size": 47142,
+                },
+                "schema": {
+                  "files": {
+                    "core.js": {
+                      "offset": "2452096",
+                      "size": 288,
+                    },
+                    "default.js": {
+                      "offset": "2452384",
+                      "size": 538,
+                    },
+                    "failsafe.js": {
+                      "offset": "2452922",
+                      "size": 278,
+                    },
+                    "json.js": {
+                      "offset": "2453200",
+                      "size": 523,
+                    },
+                  },
+                },
+                "schema.js": {
+                  "offset": "2448712",
+                  "size": 3384,
+                },
+                "snippet.js": {
+                  "offset": "2453723",
+                  "size": 3088,
+                },
+                "type": {
+                  "files": {
+                    "binary.js": {
+                      "offset": "2458660",
+                      "size": 2912,
+                    },
+                    "bool.js": {
+                      "offset": "2461572",
+                      "size": 971,
+                    },
+                    "float.js": {
+                      "offset": "2462543",
+                      "size": 2467,
+                    },
+                    "int.js": {
+                      "offset": "2465010",
+                      "size": 3691,
+                    },
+                    "map.js": {
+                      "offset": "2468701",
+                      "size": 190,
+                    },
+                    "merge.js": {
+                      "offset": "2468891",
+                      "size": 230,
+                    },
+                    "null.js": {
+                      "offset": "2469121",
+                      "size": 808,
+                    },
+                    "omap.js": {
+                      "offset": "2469929",
+                      "size": 1023,
+                    },
+                    "pairs.js": {
+                      "offset": "2470952",
+                      "size": 1084,
+                    },
+                    "seq.js": {
+                      "offset": "2472036",
+                      "size": 191,
+                    },
+                    "set.js": {
+                      "offset": "2472227",
+                      "size": 547,
+                    },
+                    "str.js": {
+                      "offset": "2472774",
+                      "size": 189,
+                    },
+                    "timestamp.js": {
+                      "offset": "2472963",
+                      "size": 2571,
+                    },
+                  },
+                },
+                "type.js": {
+                  "offset": "2456811",
+                  "size": 1849,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "2475534",
+              "size": 1075,
+            },
+          },
+        },
+        "json-stable-stringify": {
+          "files": {
+            "LICENSE": {
+              "offset": "2476609",
+              "size": 1069,
+            },
+            "index.js": {
+              "offset": "2477678",
+              "size": 4266,
+            },
+            "package.json": {
+              "offset": "2481944",
+              "size": 1601,
+            },
+            "tsconfig.json": {
+              "offset": "2483545",
+              "size": 145,
+            },
+          },
+        },
+        "jsonfile": {
+          "files": {
+            "LICENSE": {
+              "offset": "2483690",
+              "size": 1110,
+            },
+            "index.js": {
+              "offset": "2484800",
+              "size": 1900,
+            },
+            "package.json": {
+              "offset": "2486700",
+              "size": 558,
+            },
+            "utils.js": {
+              "offset": "2487258",
+              "size": 498,
+            },
+          },
+        },
+        "jsonify": {
+          "files": {
+            "index.js": {
+              "offset": "2487756",
+              "size": 103,
+            },
+            "lib": {
+              "files": {
+                "parse.js": {
+                  "offset": "2487859",
+                  "size": 4647,
+                },
+                "stringify.js": {
+                  "offset": "2492506",
+                  "size": 4306,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "2496812",
+              "size": 1008,
+            },
+          },
+        },
+        "klaw-sync": {
+          "files": {
+            "LICENSE": {
+              "offset": "2497820",
+              "size": 1077,
+            },
+            "klaw-sync.js": {
+              "offset": "2498897",
+              "size": 1021,
+            },
+            "package.json": {
+              "offset": "2499918",
+              "size": 683,
+            },
+          },
+        },
+        "lazy-val": {
+          "files": {
+            "out": {
+              "files": {
+                "main.js": {
+                  "offset": "2500601",
+                  "size": 605,
+                },
+                "main.js.map": {
+                  "offset": "2501206",
+                  "size": 1156,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "2502362",
+              "size": 330,
+            },
+          },
+        },
+        "lodash.escaperegexp": {
+          "files": {
+            "LICENSE": {
+              "offset": "2502692",
+              "size": 1951,
+            },
+            "index.js": {
+              "offset": "2504643",
+              "size": 4398,
+            },
+            "package.json": {
+              "offset": "2509041",
+              "size": 356,
+            },
+          },
+        },
+        "lodash.isequal": {
+          "files": {
+            "LICENSE": {
+              "offset": "2509397",
+              "size": 1950,
+            },
+            "index.js": {
+              "offset": "2511347",
+              "size": 49598,
+            },
+            "package.json": {
+              "offset": "2560945",
+              "size": 346,
+            },
+          },
+        },
+        "math-intrinsics": {
+          "files": {
+            "LICENSE": {
+              "offset": "2561291",
+              "size": 1073,
+            },
+            "abs.js": {
+              "offset": "2562364",
+              "size": 73,
+            },
+            "constants": {
+              "files": {
+                "maxArrayLength.js": {
+                  "offset": "2562437",
+                  "size": 110,
+                },
+                "maxSafeInteger.js": {
+                  "offset": "2562547",
+                  "size": 231,
+                },
+                "maxValue.js": {
+                  "offset": "2562778",
+                  "size": 197,
+                },
+              },
+            },
+            "floor.js": {
+              "offset": "2562975",
+              "size": 77,
+            },
+            "isFinite.js": {
+              "offset": "2563052",
+              "size": 262,
+            },
+            "isInteger.js": {
+              "offset": "2563314",
+              "size": 410,
+            },
+            "isNaN.js": {
+              "offset": "2563724",
+              "size": 121,
+            },
+            "isNegativeZero.js": {
+              "offset": "2563845",
+              "size": 143,
+            },
+            "max.js": {
+              "offset": "2563988",
+              "size": 73,
+            },
+            "min.js": {
+              "offset": "2564061",
+              "size": 73,
+            },
+            "mod.js": {
+              "offset": "2564134",
+              "size": 218,
+            },
+            "package.json": {
+              "offset": "2564352",
+              "size": 1933,
+            },
+            "pow.js": {
+              "offset": "2566285",
+              "size": 73,
+            },
+            "round.js": {
+              "offset": "2566358",
+              "size": 77,
+            },
+            "sign.js": {
+              "offset": "2566435",
+              "size": 214,
+            },
+            "tsconfig.json": {
+              "offset": "2566649",
+              "size": 36,
+            },
+          },
+        },
+        "media-typer": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2566685",
+              "size": 461,
+            },
+            "LICENSE": {
+              "offset": "2567146",
+              "size": 1089,
+            },
+            "index.js": {
+              "offset": "2568235",
+              "size": 6375,
+            },
+            "package.json": {
+              "offset": "2574610",
+              "size": 449,
+            },
+          },
+        },
+        "merge-descriptors": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2575059",
+              "size": 363,
+            },
+            "LICENSE": {
+              "offset": "2575422",
+              "size": 1167,
+            },
+            "index.js": {
+              "offset": "2576589",
+              "size": 1218,
+            },
+            "package.json": {
+              "offset": "2577807",
+              "size": 768,
+            },
+          },
+        },
+        "methods": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2578575",
+              "size": 427,
+            },
+            "LICENSE": {
+              "offset": "2579002",
+              "size": 1180,
+            },
+            "index.js": {
+              "offset": "2580182",
+              "size": 1040,
+            },
+            "package.json": {
+              "offset": "2581222",
+              "size": 371,
+            },
+          },
+        },
+        "micromatch": {
+          "files": {
+            "LICENSE": {
+              "executable": true,
+              "offset": "2581593",
+              "size": 1091,
+            },
+            "index.js": {
+              "offset": "2582684",
+              "size": 13898,
+            },
+            "package.json": {
+              "offset": "2596582",
+              "size": 1190,
+            },
+          },
+        },
+        "mime": {
+          "files": {
+            "LICENSE": {
+              "offset": "2597772",
+              "size": 1098,
+            },
+            "cli.js": {
+              "executable": true,
+              "offset": "2598870",
+              "size": 149,
+            },
+            "mime.js": {
+              "offset": "2599019",
+              "size": 2726,
+            },
+            "package.json": {
+              "offset": "2601745",
+              "size": 575,
+            },
+            "src": {
+              "files": {
+                "build.js": {
+                  "executable": true,
+                  "offset": "2602320",
+                  "size": 1351,
+                },
+                "test.js": {
+                  "offset": "2603671",
+                  "size": 2334,
+                },
+              },
+            },
+            "types.json": {
+              "offset": "2606005",
+              "size": 31555,
+            },
+          },
+        },
+        "mime-db": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2637560",
+              "size": 12581,
+            },
+            "LICENSE": {
+              "offset": "2650141",
+              "size": 1172,
+            },
+            "db.json": {
+              "offset": "2651313",
+              "size": 185882,
+            },
+            "index.js": {
+              "offset": "2837195",
+              "size": 189,
+            },
+            "package.json": {
+              "offset": "2837384",
+              "size": 804,
+            },
+          },
+        },
+        "mime-types": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2838188",
+              "size": 8812,
+            },
+            "LICENSE": {
+              "offset": "2847000",
+              "size": 1167,
+            },
+            "index.js": {
+              "offset": "2848167",
+              "size": 3663,
+            },
+            "package.json": {
+              "offset": "2851830",
+              "size": 652,
+            },
+          },
+        },
+        "minimatch": {
+          "files": {
+            "LICENSE": {
+              "offset": "2852482",
+              "size": 765,
+            },
+            "minimatch.js": {
+              "offset": "2853247",
+              "size": 26266,
+            },
+            "package.json": {
+              "offset": "2879513",
+              "size": 529,
+            },
+          },
+        },
+        "minimist": {
+          "files": {
+            ".nycrc": {
+              "offset": "2880042",
+              "size": 229,
+            },
+            "LICENSE": {
+              "offset": "2880271",
+              "size": 1073,
+            },
+            "index.js": {
+              "offset": "2881344",
+              "size": 6196,
+            },
+            "package.json": {
+              "offset": "2887540",
+              "size": 1247,
+            },
+          },
+        },
+        "ms": {
+          "files": {
+            "index.js": {
+              "offset": "2888787",
+              "size": 2764,
+            },
+            "license.md": {
+              "offset": "2891551",
+              "size": 1077,
+            },
+            "package.json": {
+              "offset": "2892628",
+              "size": 469,
+            },
+          },
+        },
+        "negotiator": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2893097",
+              "size": 2499,
+            },
+            "LICENSE": {
+              "offset": "2895596",
+              "size": 1177,
+            },
+            "index.js": {
+              "offset": "2896773",
+              "size": 2451,
+            },
+            "lib": {
+              "files": {
+                "charset.js": {
+                  "offset": "2899224",
+                  "size": 3081,
+                },
+                "encoding.js": {
+                  "offset": "2902305",
+                  "size": 3506,
+                },
+                "language.js": {
+                  "offset": "2905811",
+                  "size": 3409,
+                },
+                "mediaType.js": {
+                  "offset": "2909220",
+                  "size": 5358,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "2914578",
+              "size": 419,
+            },
+          },
+        },
+        "object-inspect": {
+          "files": {
+            ".nycrc": {
+              "offset": "2914997",
+              "size": 236,
+            },
+            "LICENSE": {
+              "offset": "2915233",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "2916304",
+              "size": 19059,
+            },
+            "package-support.json": {
+              "offset": "2935363",
+              "size": 365,
+            },
+            "package.json": {
+              "offset": "2935728",
+              "size": 1991,
+            },
+            "test-core-js.js": {
+              "offset": "2937719",
+              "size": 534,
+            },
+            "util.inspect.js": {
+              "offset": "2938253",
+              "size": 42,
+            },
+          },
+        },
+        "object-keys": {
+          "files": {
+            ".editorconfig": {
+              "offset": "2938295",
+              "size": 276,
+            },
+            "LICENSE": {
+              "offset": "2938571",
+              "size": 1080,
+            },
+            "implementation.js": {
+              "offset": "2939651",
+              "size": 3218,
+            },
+            "index.js": {
+              "offset": "2942869",
+              "size": 823,
+            },
+            "isArguments.js": {
+              "offset": "2943692",
+              "size": 422,
+            },
+            "package.json": {
+              "offset": "2944114",
+              "size": 1122,
+            },
+          },
+        },
+        "on-finished": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2945236",
+              "size": 1865,
+            },
+            "LICENSE": {
+              "offset": "2947101",
+              "size": 1167,
+            },
+            "index.js": {
+              "offset": "2948268",
+              "size": 4430,
+            },
+            "package.json": {
+              "offset": "2952698",
+              "size": 669,
+            },
+          },
+        },
+        "once": {
+          "files": {
+            "LICENSE": {
+              "offset": "2953367",
+              "size": 765,
+            },
+            "once.js": {
+              "offset": "2954132",
+              "size": 935,
+            },
+            "package.json": {
+              "offset": "2955067",
+              "size": 452,
+            },
+          },
+        },
+        "open": {
+          "files": {
+            "index.js": {
+              "offset": "2955519",
+              "size": 4844,
+            },
+            "license": {
+              "offset": "2960363",
+              "size": 1117,
+            },
+            "package.json": {
+              "offset": "2961480",
+              "size": 660,
+            },
+            "xdg-open": {
+              "executable": true,
+              "offset": "2962140",
+              "size": 25763,
+            },
+          },
+        },
+        "os-tmpdir": {
+          "files": {
+            "index.js": {
+              "offset": "2987903",
+              "size": 572,
+            },
+            "license": {
+              "offset": "2988475",
+              "size": 1119,
+            },
+            "package.json": {
+              "offset": "2989594",
+              "size": 415,
+            },
+          },
+        },
+        "parseurl": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "2990009",
+              "size": 1043,
+            },
+            "LICENSE": {
+              "offset": "2991052",
+              "size": 1173,
+            },
+            "index.js": {
+              "offset": "2992225",
+              "size": 2809,
+            },
+            "package.json": {
+              "offset": "2995034",
+              "size": 657,
+            },
+          },
+        },
+        "patch-package": {
+          "files": {
+            "LICENSE": {
+              "offset": "2995691",
+              "size": 1067,
+            },
+            "dist": {
+              "files": {
+                "PackageDetails.js": {
+                  "offset": "2996758",
+                  "size": 14598,
+                },
+                "PackageDetails.test.js": {
+                  "offset": "3011356",
+                  "size": 26251,
+                },
+                "applyPatches.js": {
+                  "offset": "3037607",
+                  "size": 54153,
+                },
+                "assertNever.js": {
+                  "offset": "3091760",
+                  "size": 720,
+                },
+                "coerceSemVer.js": {
+                  "offset": "3092480",
+                  "size": 1124,
+                },
+                "createIssue.js": {
+                  "offset": "3093604",
+                  "size": 11367,
+                },
+                "createIssue.test.js": {
+                  "offset": "3104971",
+                  "size": 3013,
+                },
+                "detectPackageManager.js": {
+                  "offset": "3107984",
+                  "size": 7600,
+                },
+                "filterFiles.js": {
+                  "offset": "3115584",
+                  "size": 2366,
+                },
+                "getAppRootPath.js": {
+                  "offset": "3117950",
+                  "size": 2099,
+                },
+                "getPackageResolution.js": {
+                  "offset": "3120049",
+                  "size": 16772,
+                },
+                "getPackageVersion.js": {
+                  "offset": "3136821",
+                  "size": 973,
+                },
+                "getPackageVersion.test.js": {
+                  "offset": "3137794",
+                  "size": 8066,
+                },
+                "hash.js": {
+                  "offset": "3145860",
+                  "size": 3243,
+                },
+                "index.js": {
+                  "executable": true,
+                  "offset": "3149103",
+                  "size": 21196,
+                },
+                "makePatch.js": {
+                  "offset": "3170299",
+                  "size": 64410,
+                },
+                "makeRegExp.js": {
+                  "offset": "3234709",
+                  "size": 2550,
+                },
+                "packageIsDevDependency.js": {
+                  "offset": "3237259",
+                  "size": 2058,
+                },
+                "packageIsDevDependency.test.js": {
+                  "offset": "3239317",
+                  "size": 4647,
+                },
+                "patch": {
+                  "files": {
+                    "apply.js": {
+                      "offset": "3243964",
+                      "size": 30163,
+                    },
+                    "parse.js": {
+                      "offset": "3274127",
+                      "size": 41350,
+                    },
+                    "read.js": {
+                      "offset": "3315477",
+                      "size": 6396,
+                    },
+                    "reverse.js": {
+                      "offset": "3321873",
+                      "size": 9838,
+                    },
+                  },
+                },
+                "patchFs.js": {
+                  "offset": "3331711",
+                  "size": 6348,
+                },
+                "path.js": {
+                  "offset": "3338059",
+                  "size": 2138,
+                },
+                "rebase.js": {
+                  "offset": "3340197",
+                  "size": 20835,
+                },
+                "resolveRelativeFileDependencies.js": {
+                  "offset": "3361032",
+                  "size": 2614,
+                },
+                "resolveRelativeFileDependencies.test.js": {
+                  "offset": "3363646",
+                  "size": 2932,
+                },
+                "spawnSafe.js": {
+                  "offset": "3366578",
+                  "size": 3250,
+                },
+                "stateFile.js": {
+                  "offset": "3369828",
+                  "size": 9097,
+                },
+              },
+            },
+            "index.js": {
+              "executable": true,
+              "offset": "3378925",
+              "size": 49,
+            },
+            "node_modules": {
+              "files": {
+                "fs-extra": {
+                  "files": {
+                    "LICENSE": {
+                      "offset": "3381063",
+                      "size": 1084,
+                    },
+                    "lib": {
+                      "files": {
+                        "copy": {
+                          "files": {
+                            "copy.js": {
+                              "offset": "3387857",
+                              "size": 7605,
+                            },
+                            "index.js": {
+                              "offset": "3395462",
+                              "size": 111,
+                            },
+                          },
+                        },
+                        "copy-sync": {
+                          "files": {
+                            "copy-sync.js": {
+                              "offset": "3382147",
+                              "size": 5640,
+                            },
+                            "index.js": {
+                              "offset": "3387787",
+                              "size": 70,
+                            },
+                          },
+                        },
+                        "empty": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3395573",
+                              "size": 986,
+                            },
+                          },
+                        },
+                        "ensure": {
+                          "files": {
+                            "file.js": {
+                              "offset": "3396559",
+                              "size": 1709,
+                            },
+                            "index.js": {
+                              "offset": "3398268",
+                              "size": 623,
+                            },
+                            "link.js": {
+                              "offset": "3398891",
+                              "size": 1564,
+                            },
+                            "symlink-paths.js": {
+                              "offset": "3400455",
+                              "size": 3374,
+                            },
+                            "symlink-type.js": {
+                              "offset": "3403829",
+                              "size": 694,
+                            },
+                            "symlink.js": {
+                              "offset": "3404523",
+                              "size": 2050,
+                            },
+                          },
+                        },
+                        "fs": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3406573",
+                              "size": 3432,
+                            },
+                          },
+                        },
+                        "index.js": {
+                          "offset": "3410005",
+                          "size": 719,
+                        },
+                        "json": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3410724",
+                              "size": 508,
+                            },
+                            "jsonfile.js": {
+                              "offset": "3411232",
+                              "size": 238,
+                            },
+                            "output-json-sync.js": {
+                              "offset": "3411470",
+                              "size": 271,
+                            },
+                            "output-json.js": {
+                              "offset": "3411741",
+                              "size": 272,
+                            },
+                          },
+                        },
+                        "mkdirs": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3412013",
+                              "size": 328,
+                            },
+                            "make-dir.js": {
+                              "offset": "3412341",
+                              "size": 4402,
+                            },
+                          },
+                        },
+                        "move": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3418012",
+                              "size": 111,
+                            },
+                            "move.js": {
+                              "offset": "3418123",
+                              "size": 1631,
+                            },
+                          },
+                        },
+                        "move-sync": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3416743",
+                              "size": 70,
+                            },
+                            "move-sync.js": {
+                              "offset": "3416813",
+                              "size": 1199,
+                            },
+                          },
+                        },
+                        "output": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3419754",
+                              "size": 947,
+                            },
+                          },
+                        },
+                        "path-exists": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3420701",
+                              "size": 263,
+                            },
+                          },
+                        },
+                        "remove": {
+                          "files": {
+                            "index.js": {
+                              "offset": "3420964",
+                              "size": 165,
+                            },
+                            "rimraf.js": {
+                              "offset": "3421129",
+                              "size": 7443,
+                            },
+                          },
+                        },
+                        "util": {
+                          "files": {
+                            "stat.js": {
+                              "offset": "3428572",
+                              "size": 4629,
+                            },
+                            "utimes.js": {
+                              "offset": "3433201",
+                              "size": 615,
+                            },
+                          },
+                        },
+                      },
+                    },
+                    "package.json": {
+                      "offset": "3433816",
+                      "size": 952,
+                    },
+                  },
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3378974",
+              "size": 2089,
+            },
+          },
+        },
+        "path-is-absolute": {
+          "files": {
+            "index.js": {
+              "offset": "3434768",
+              "size": 611,
+            },
+            "license": {
+              "offset": "3435379",
+              "size": 1119,
+            },
+            "package.json": {
+              "offset": "3436498",
+              "size": 424,
+            },
+          },
+        },
+        "path-key": {
+          "files": {
+            "index.js": {
+              "offset": "3436922",
+              "size": 415,
+            },
+            "license": {
+              "offset": "3437337",
+              "size": 1109,
+            },
+            "package.json": {
+              "offset": "3438446",
+              "size": 507,
+            },
+          },
+        },
+        "path-to-regexp": {
+          "files": {
+            "LICENSE": {
+              "offset": "3438953",
+              "size": 1103,
+            },
+            "index.js": {
+              "offset": "3440056",
+              "size": 3839,
+            },
+            "package.json": {
+              "offset": "3443895",
+              "size": 437,
+            },
+          },
+        },
+        "picomatch": {
+          "files": {
+            "LICENSE": {
+              "offset": "3444332",
+              "size": 1091,
+            },
+            "index.js": {
+              "offset": "3445423",
+              "size": 60,
+            },
+            "lib": {
+              "files": {
+                "constants.js": {
+                  "offset": "3445483",
+                  "size": 4448,
+                },
+                "parse.js": {
+                  "offset": "3449931",
+                  "size": 27763,
+                },
+                "picomatch.js": {
+                  "offset": "3477694",
+                  "size": 9956,
+                },
+                "scan.js": {
+                  "offset": "3487650",
+                  "size": 9189,
+                },
+                "utils.js": {
+                  "offset": "3496839",
+                  "size": 1885,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3498724",
+              "size": 1364,
+            },
+          },
+        },
+        "proxy-addr": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3500088",
+              "size": 2991,
+            },
+            "LICENSE": {
+              "offset": "3503079",
+              "size": 1094,
+            },
+            "index.js": {
+              "offset": "3504173",
+              "size": 6000,
+            },
+            "package.json": {
+              "offset": "3510173",
+              "size": 842,
+            },
+          },
+        },
+        "qs": {
+          "files": {
+            ".editorconfig": {
+              "offset": "3511015",
+              "size": 597,
+            },
+            ".nycrc": {
+              "offset": "3511612",
+              "size": 216,
+            },
+            "LICENSE.md": {
+              "offset": "3511828",
+              "size": 1600,
+            },
+            "dist": {
+              "files": {
+                "qs.js": {
+                  "offset": "3513428",
+                  "size": 46649,
+                },
+              },
+            },
+            "lib": {
+              "files": {
+                "formats.js": {
+                  "offset": "3560077",
+                  "size": 476,
+                },
+                "index.js": {
+                  "offset": "3560553",
+                  "size": 211,
+                },
+                "parse.js": {
+                  "offset": "3560764",
+                  "size": 11317,
+                },
+                "stringify.js": {
+                  "offset": "3572081",
+                  "size": 11331,
+                },
+                "utils.js": {
+                  "offset": "3583412",
+                  "size": 7267,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3590679",
+              "size": 1575,
+            },
+          },
+        },
+        "range-parser": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3592254",
+              "size": 917,
+            },
+            "LICENSE": {
+              "offset": "3593171",
+              "size": 1178,
+            },
+            "index.js": {
+              "offset": "3594349",
+              "size": 2900,
+            },
+            "package.json": {
+              "offset": "3597249",
+              "size": 697,
+            },
+          },
+        },
+        "raw-body": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3597946",
+              "size": 6048,
+            },
+            "LICENSE": {
+              "offset": "3603994",
+              "size": 1181,
+            },
+            "SECURITY.md": {
+              "offset": "3605175",
+              "size": 1188,
+            },
+            "index.js": {
+              "offset": "3606363",
+              "size": 7171,
+            },
+            "package.json": {
+              "offset": "3613534",
+              "size": 949,
+            },
+          },
+        },
+        "rimraf": {
+          "files": {
+            "LICENSE": {
+              "offset": "3614483",
+              "size": 765,
+            },
+            "bin.js": {
+              "executable": true,
+              "offset": "3615248",
+              "size": 1196,
+            },
+            "package.json": {
+              "offset": "3616444",
+              "size": 496,
+            },
+            "rimraf.js": {
+              "offset": "3616940",
+              "size": 9225,
+            },
+          },
+        },
+        "safe-buffer": {
+          "files": {
+            "LICENSE": {
+              "offset": "3626165",
+              "size": 1081,
+            },
+            "index.js": {
+              "offset": "3627246",
+              "size": 1670,
+            },
+            "package.json": {
+              "offset": "3628916",
+              "size": 774,
+            },
+          },
+        },
+        "safer-buffer": {
+          "files": {
+            "LICENSE": {
+              "offset": "3629690",
+              "size": 1094,
+            },
+            "Porting-Buffer.md": {
+              "offset": "3630784",
+              "size": 12794,
+            },
+            "dangerous.js": {
+              "offset": "3643578",
+              "size": 1483,
+            },
+            "package.json": {
+              "offset": "3645061",
+              "size": 572,
+            },
+            "safer.js": {
+              "offset": "3645633",
+              "size": 2110,
+            },
+            "tests.js": {
+              "offset": "3647743",
+              "size": 15735,
+            },
+          },
+        },
+        "sax": {
+          "files": {
+            "LICENSE": {
+              "offset": "3663478",
+              "size": 2031,
+            },
+            "lib": {
+              "files": {
+                "sax.js": {
+                  "offset": "3665509",
+                  "size": 44774,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3710283",
+              "size": 483,
+            },
+          },
+        },
+        "semver": {
+          "files": {
+            "LICENSE": {
+              "offset": "3710766",
+              "size": 765,
+            },
+            "bin": {
+              "files": {
+                "semver.js": {
+                  "executable": true,
+                  "offset": "3711531",
+                  "size": 4725,
+                },
+              },
+            },
+            "classes": {
+              "files": {
+                "comparator.js": {
+                  "offset": "3716256",
+                  "size": 3617,
+                },
+                "index.js": {
+                  "offset": "3719873",
+                  "size": 129,
+                },
+                "range.js": {
+                  "offset": "3720002",
+                  "size": 14924,
+                },
+                "semver.js": {
+                  "offset": "3734926",
+                  "size": 9338,
+                },
+              },
+            },
+            "functions": {
+              "files": {
+                "clean.js": {
+                  "offset": "3744264",
+                  "size": 191,
+                },
+                "cmp.js": {
+                  "offset": "3744455",
+                  "size": 947,
+                },
+                "coerce.js": {
+                  "offset": "3745402",
+                  "size": 1990,
+                },
+                "compare-build.js": {
+                  "offset": "3747392",
+                  "size": 267,
+                },
+                "compare-loose.js": {
+                  "offset": "3747659",
+                  "size": 118,
+                },
+                "compare.js": {
+                  "offset": "3747777",
+                  "size": 156,
+                },
+                "diff.js": {
+                  "offset": "3747933",
+                  "size": 1407,
+                },
+                "eq.js": {
+                  "offset": "3749340",
+                  "size": 112,
+                },
+                "gt.js": {
+                  "offset": "3749452",
+                  "size": 110,
+                },
+                "gte.js": {
+                  "offset": "3749562",
+                  "size": 113,
+                },
+                "inc.js": {
+                  "offset": "3749675",
+                  "size": 464,
+                },
+                "lt.js": {
+                  "offset": "3750139",
+                  "size": 110,
+                },
+                "lte.js": {
+                  "offset": "3750249",
+                  "size": 113,
+                },
+                "major.js": {
+                  "offset": "3750362",
+                  "size": 122,
+                },
+                "minor.js": {
+                  "offset": "3750484",
+                  "size": 122,
+                },
+                "neq.js": {
+                  "offset": "3750606",
+                  "size": 114,
+                },
+                "parse.js": {
+                  "offset": "3750720",
+                  "size": 317,
+                },
+                "patch.js": {
+                  "offset": "3751037",
+                  "size": 122,
+                },
+                "prerelease.js": {
+                  "offset": "3751159",
+                  "size": 220,
+                },
+                "rcompare.js": {
+                  "offset": "3751379",
+                  "size": 118,
+                },
+                "rsort.js": {
+                  "offset": "3751497",
+                  "size": 149,
+                },
+                "satisfies.js": {
+                  "offset": "3751646",
+                  "size": 233,
+                },
+                "sort.js": {
+                  "offset": "3751879",
+                  "size": 147,
+                },
+                "valid.js": {
+                  "offset": "3752026",
+                  "size": 162,
+                },
+              },
+            },
+            "index.js": {
+              "offset": "3752188",
+              "size": 2616,
+            },
+            "internal": {
+              "files": {
+                "constants.js": {
+                  "offset": "3754804",
+                  "size": 859,
+                },
+                "debug.js": {
+                  "offset": "3755663",
+                  "size": 226,
+                },
+                "identifiers.js": {
+                  "offset": "3755889",
+                  "size": 410,
+                },
+                "lrucache.js": {
+                  "offset": "3756299",
+                  "size": 788,
+                },
+                "parse-options.js": {
+                  "offset": "3757087",
+                  "size": 324,
+                },
+                "re.js": {
+                  "offset": "3757411",
+                  "size": 7998,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3765409",
+              "size": 1350,
+            },
+            "preload.js": {
+              "offset": "3766759",
+              "size": 69,
+            },
+            "range.bnf": {
+              "offset": "3766828",
+              "size": 619,
+            },
+            "ranges": {
+              "files": {
+                "gtr.js": {
+                  "offset": "3767447",
+                  "size": 217,
+                },
+                "intersects.js": {
+                  "offset": "3767664",
+                  "size": 210,
+                },
+                "ltr.js": {
+                  "offset": "3767874",
+                  "size": 213,
+                },
+                "max-satisfying.js": {
+                  "offset": "3768087",
+                  "size": 579,
+                },
+                "min-satisfying.js": {
+                  "offset": "3768666",
+                  "size": 577,
+                },
+                "min-version.js": {
+                  "offset": "3769243",
+                  "size": 1500,
+                },
+                "outside.js": {
+                  "offset": "3770743",
+                  "size": 2190,
+                },
+                "simplify.js": {
+                  "offset": "3772933",
+                  "size": 1341,
+                },
+                "subset.js": {
+                  "offset": "3774274",
+                  "size": 7510,
+                },
+                "to-comparators.js": {
+                  "offset": "3781784",
+                  "size": 268,
+                },
+                "valid.js": {
+                  "offset": "3782052",
+                  "size": 312,
+                },
+              },
+            },
+          },
+        },
+        "send": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3782364",
+              "size": 13397,
+            },
+            "LICENSE": {
+              "offset": "3795761",
+              "size": 1128,
+            },
+            "SECURITY.md": {
+              "offset": "3796889",
+              "size": 1170,
+            },
+            "index.js": {
+              "offset": "3798059",
+              "size": 23455,
+            },
+            "node_modules": {
+              "files": {
+                "encodeurl": {
+                  "files": {
+                    "HISTORY.md": {
+                      "offset": "3822615",
+                      "size": 238,
+                    },
+                    "LICENSE": {
+                      "offset": "3822853",
+                      "size": 1089,
+                    },
+                    "index.js": {
+                      "offset": "3823942",
+                      "size": 1586,
+                    },
+                    "package.json": {
+                      "offset": "3825528",
+                      "size": 612,
+                    },
+                  },
+                },
+                "ms": {
+                  "files": {
+                    "index.js": {
+                      "offset": "3826140",
+                      "size": 3024,
+                    },
+                    "license.md": {
+                      "offset": "3829164",
+                      "size": 1079,
+                    },
+                    "package.json": {
+                      "offset": "3830243",
+                      "size": 497,
+                    },
+                  },
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3821514",
+              "size": 1101,
+            },
+          },
+        },
+        "serve-static": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3830740",
+              "size": 10763,
+            },
+            "LICENSE": {
+              "offset": "3841503",
+              "size": 1189,
+            },
+            "index.js": {
+              "offset": "3842692",
+              "size": 4521,
+            },
+            "package.json": {
+              "offset": "3847213",
+              "size": 834,
+            },
+          },
+        },
+        "set-function-length": {
+          "files": {
+            ".nycrc": {
+              "offset": "3848047",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "3848263",
+              "size": 1083,
+            },
+            "env.js": {
+              "offset": "3849346",
+              "size": 867,
+            },
+            "index.js": {
+              "offset": "3850213",
+              "size": 1273,
+            },
+            "package.json": {
+              "offset": "3851486",
+              "size": 1953,
+            },
+            "tsconfig.json": {
+              "offset": "3853439",
+              "size": 116,
+            },
+          },
+        },
+        "setprototypeof": {
+          "files": {
+            "LICENSE": {
+              "offset": "3853555",
+              "size": 727,
+            },
+            "index.js": {
+              "offset": "3854282",
+              "size": 407,
+            },
+            "package.json": {
+              "offset": "3854689",
+              "size": 451,
+            },
+          },
+        },
+        "shebang-command": {
+          "files": {
+            "index.js": {
+              "offset": "3855140",
+              "size": 387,
+            },
+            "license": {
+              "offset": "3855527",
+              "size": 1116,
+            },
+            "package.json": {
+              "offset": "3856643",
+              "size": 484,
+            },
+          },
+        },
+        "side-channel": {
+          "files": {
+            ".editorconfig": {
+              "offset": "3857127",
+              "size": 145,
+            },
+            ".nycrc": {
+              "offset": "3857272",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "3857488",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "3858559",
+              "size": 1189,
+            },
+            "package.json": {
+              "offset": "3859748",
+              "size": 1564,
+            },
+            "tsconfig.json": {
+              "offset": "3861312",
+              "size": 116,
+            },
+          },
+        },
+        "side-channel-list": {
+          "files": {
+            ".editorconfig": {
+              "offset": "3861428",
+              "size": 145,
+            },
+            ".nycrc": {
+              "offset": "3861573",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "3861789",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "3862860",
+              "size": 3391,
+            },
+            "package.json": {
+              "offset": "3866251",
+              "size": 1490,
+            },
+            "tsconfig.json": {
+              "offset": "3867741",
+              "size": 116,
+            },
+          },
+        },
+        "side-channel-map": {
+          "files": {
+            ".editorconfig": {
+              "offset": "3867857",
+              "size": 145,
+            },
+            ".nycrc": {
+              "offset": "3868002",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "3868218",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "3869289",
+              "size": 1981,
+            },
+            "package.json": {
+              "offset": "3871270",
+              "size": 1576,
+            },
+            "tsconfig.json": {
+              "offset": "3872846",
+              "size": 116,
+            },
+          },
+        },
+        "side-channel-weakmap": {
+          "files": {
+            ".editorconfig": {
+              "offset": "3872962",
+              "size": 145,
+            },
+            ".nycrc": {
+              "offset": "3873107",
+              "size": 216,
+            },
+            "LICENSE": {
+              "offset": "3873323",
+              "size": 1071,
+            },
+            "index.js": {
+              "offset": "3874394",
+              "size": 2708,
+            },
+            "package.json": {
+              "offset": "3877102",
+              "size": 1646,
+            },
+            "tsconfig.json": {
+              "offset": "3878748",
+              "size": 116,
+            },
+          },
+        },
+        "slash": {
+          "files": {
+            "index.js": {
+              "offset": "3878864",
+              "size": 294,
+            },
+            "license": {
+              "offset": "3879158",
+              "size": 1109,
+            },
+            "package.json": {
+              "offset": "3880267",
+              "size": 414,
+            },
+          },
+        },
+        "statuses": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3880681",
+              "size": 1546,
+            },
+            "LICENSE": {
+              "offset": "3882227",
+              "size": 1172,
+            },
+            "codes.json": {
+              "offset": "3883399",
+              "size": 1789,
+            },
+            "index.js": {
+              "offset": "3885188",
+              "size": 2610,
+            },
+            "package.json": {
+              "offset": "3887798",
+              "size": 674,
+            },
+          },
+        },
+        "supports-color": {
+          "files": {
+            "browser.js": {
+              "offset": "3888472",
+              "size": 67,
+            },
+            "index.js": {
+              "offset": "3888539",
+              "size": 2748,
+            },
+            "license": {
+              "offset": "3891287",
+              "size": 1109,
+            },
+            "package.json": {
+              "offset": "3892396",
+              "size": 555,
+            },
+          },
+        },
+        "tiny-typed-emitter": {
+          "files": {
+            "LICENSE": {
+              "offset": "3892951",
+              "size": 1104,
+            },
+            "lib": {
+              "files": {
+                "index.js": {
+                  "offset": "3894055",
+                  "size": 132,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3894187",
+              "size": 395,
+            },
+          },
+        },
+        "tmp": {
+          "files": {
+            "LICENSE": {
+              "offset": "3894582",
+              "size": 1082,
+            },
+            "lib": {
+              "files": {
+                "tmp.js": {
+                  "offset": "3895664",
+                  "size": 14895,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3910559",
+              "size": 471,
+            },
+          },
+        },
+        "toidentifier": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3911030",
+              "size": 128,
+            },
+            "LICENSE": {
+              "offset": "3911158",
+              "size": 1108,
+            },
+            "index.js": {
+              "offset": "3912266",
+              "size": 504,
+            },
+            "package.json": {
+              "offset": "3912770",
+              "size": 682,
+            },
+          },
+        },
+        "type-is": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3913452",
+              "size": 5447,
+            },
+            "LICENSE": {
+              "offset": "3918899",
+              "size": 1172,
+            },
+            "index.js": {
+              "offset": "3920071",
+              "size": 5562,
+            },
+            "package.json": {
+              "offset": "3925633",
+              "size": 668,
+            },
+          },
+        },
+        "universalify": {
+          "files": {
+            "LICENSE": {
+              "offset": "3926301",
+              "size": 1100,
+            },
+            "index.js": {
+              "offset": "3927401",
+              "size": 706,
+            },
+            "package.json": {
+              "offset": "3928107",
+              "size": 618,
+            },
+          },
+        },
+        "unpipe": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3928725",
+              "size": 59,
+            },
+            "LICENSE": {
+              "offset": "3928784",
+              "size": 1114,
+            },
+            "index.js": {
+              "offset": "3929898",
+              "size": 1118,
+            },
+            "package.json": {
+              "offset": "3931016",
+              "size": 460,
+            },
+          },
+        },
+        "utils-merge": {
+          "files": {
+            "LICENSE": {
+              "offset": "3931476",
+              "size": 1084,
+            },
+            "index.js": {
+              "offset": "3932560",
+              "size": 381,
+            },
+            "package.json": {
+              "offset": "3932941",
+              "size": 626,
+            },
+          },
+        },
+        "vary": {
+          "files": {
+            "HISTORY.md": {
+              "offset": "3933567",
+              "size": 792,
+            },
+            "LICENSE": {
+              "offset": "3934359",
+              "size": 1094,
+            },
+            "index.js": {
+              "offset": "3935453",
+              "size": 2930,
+            },
+            "package.json": {
+              "offset": "3938383",
+              "size": 756,
+            },
+          },
+        },
+        "which": {
+          "files": {
+            "LICENSE": {
+              "offset": "3939139",
+              "size": 765,
+            },
+            "bin": {
+              "files": {
+                "node-which": {
+                  "executable": true,
+                  "offset": "3939904",
+                  "size": 985,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "3940889",
+              "size": 681,
+            },
+            "which.js": {
+              "offset": "3941570",
+              "size": 3163,
+            },
+          },
+        },
+        "yaml": {
+          "files": {
+            "LICENSE": {
+              "offset": "3944733",
+              "size": 738,
+            },
+            "bin.mjs": {
+              "executable": true,
+              "offset": "3945471",
+              "size": 310,
+            },
+            "browser": {
+              "files": {
+                "dist": {
+                  "files": {
+                    "compose": {
+                      "files": {
+                        "compose-collection.js": {
+                          "offset": "3945781",
+                          "size": 3505,
+                        },
+                        "compose-doc.js": {
+                          "offset": "3949286",
+                          "size": 1555,
+                        },
+                        "compose-node.js": {
+                          "offset": "3950841",
+                          "size": 3817,
+                        },
+                        "compose-scalar.js": {
+                          "offset": "3954658",
+                          "size": 3316,
+                        },
+                        "composer.js": {
+                          "offset": "3957974",
+                          "size": 8400,
+                        },
+                        "resolve-block-map.js": {
+                          "offset": "3966374",
+                          "size": 4915,
+                        },
+                        "resolve-block-scalar.js": {
+                          "offset": "3971289",
+                          "size": 7447,
+                        },
+                        "resolve-block-seq.js": {
+                          "offset": "3978736",
+                          "size": 1748,
+                        },
+                        "resolve-end.js": {
+                          "offset": "3980484",
+                          "size": 1239,
+                        },
+                        "resolve-flow-collection.js": {
+                          "offset": "3981723",
+                          "size": 8797,
+                        },
+                        "resolve-flow-scalar.js": {
+                          "offset": "3990520",
+                          "size": 7302,
+                        },
+                        "resolve-props.js": {
+                          "offset": "3997822",
+                          "size": 5610,
+                        },
+                        "util-contains-newline.js": {
+                          "offset": "4003432",
+                          "size": 1051,
+                        },
+                        "util-empty-scalar-position.js": {
+                          "offset": "4004483",
+                          "size": 837,
+                        },
+                        "util-flow-indent-check.js": {
+                          "offset": "4005320",
+                          "size": 494,
+                        },
+                        "util-map-includes.js": {
+                          "offset": "4005814",
+                          "size": 428,
+                        },
+                      },
+                    },
+                    "doc": {
+                      "files": {
+                        "Document.js": {
+                          "offset": "4006242",
+                          "size": 12903,
+                        },
+                        "anchors.js": {
+                          "offset": "4019145",
+                          "size": 2293,
+                        },
+                        "applyReviver.js": {
+                          "offset": "4021438",
+                          "size": 1923,
+                        },
+                        "createNode.js": {
+                          "offset": "4023361",
+                          "size": 3078,
+                        },
+                        "directives.js": {
+                          "offset": "4026439",
+                          "size": 6188,
+                        },
+                      },
+                    },
+                    "errors.js": {
+                      "offset": "4032627",
+                      "size": 2029,
+                    },
+                    "index.js": {
+                      "offset": "4034656",
+                      "size": 879,
+                    },
+                    "log.js": {
+                      "offset": "4035535",
+                      "size": 260,
+                    },
+                    "nodes": {
+                      "files": {
+                        "Alias.js": {
+                          "offset": "4035795",
+                          "size": 3376,
+                        },
+                        "Collection.js": {
+                          "offset": "4039171",
+                          "size": 5076,
+                        },
+                        "Node.js": {
+                          "offset": "4044247",
+                          "size": 1339,
+                        },
+                        "Pair.js": {
+                          "offset": "4045586",
+                          "size": 1124,
+                        },
+                        "Scalar.js": {
+                          "offset": "4046710",
+                          "size": 700,
+                        },
+                        "YAMLMap.js": {
+                          "offset": "4047410",
+                          "size": 4957,
+                        },
+                        "YAMLSeq.js": {
+                          "offset": "4052367",
+                          "size": 3573,
+                        },
+                        "addPairToJSMap.js": {
+                          "offset": "4055940",
+                          "size": 2220,
+                        },
+                        "identity.js": {
+                          "offset": "4058160",
+                          "size": 1513,
+                        },
+                        "toJS.js": {
+                          "offset": "4059673",
+                          "size": 1266,
+                        },
+                      },
+                    },
+                    "parse": {
+                      "files": {
+                        "cst-scalar.js": {
+                          "offset": "4060939",
+                          "size": 9235,
+                        },
+                        "cst-stringify.js": {
+                          "offset": "4070174",
+                          "size": 1775,
+                        },
+                        "cst-visit.js": {
+                          "offset": "4071949",
+                          "size": 3966,
+                        },
+                        "cst.js": {
+                          "offset": "4075915",
+                          "size": 2886,
+                        },
+                        "lexer.js": {
+                          "offset": "4078801",
+                          "size": 24062,
+                        },
+                        "line-counter.js": {
+                          "offset": "4102863",
+                          "size": 1419,
+                        },
+                        "parser.js": {
+                          "offset": "4104282",
+                          "size": 35182,
+                        },
+                      },
+                    },
+                    "public-api.js": {
+                      "offset": "4139464",
+                      "size": 3992,
+                    },
+                    "schema": {
+                      "files": {
+                        "Schema.js": {
+                          "offset": "4143456",
+                          "size": 1495,
+                        },
+                        "common": {
+                          "files": {
+                            "map.js": {
+                              "offset": "4144951",
+                              "size": 439,
+                            },
+                            "null.js": {
+                              "offset": "4145390",
+                              "size": 434,
+                            },
+                            "seq.js": {
+                              "offset": "4145824",
+                              "size": 440,
+                            },
+                            "string.js": {
+                              "offset": "4146264",
+                              "size": 421,
+                            },
+                          },
+                        },
+                        "core": {
+                          "files": {
+                            "bool.js": {
+                              "offset": "4146685",
+                              "size": 607,
+                            },
+                            "float.js": {
+                              "offset": "4147292",
+                              "size": 1399,
+                            },
+                            "int.js": {
+                              "offset": "4148691",
+                              "size": 1324,
+                            },
+                            "schema.js": {
+                              "offset": "4150015",
+                              "size": 480,
+                            },
+                          },
+                        },
+                        "json": {
+                          "files": {
+                            "schema.js": {
+                              "offset": "4150495",
+                              "size": 1867,
+                            },
+                          },
+                        },
+                        "tags.js": {
+                          "offset": "4152362",
+                          "size": 2962,
+                        },
+                        "yaml-1.1": {
+                          "files": {
+                            "binary.js": {
+                              "offset": "4155324",
+                              "size": 2328,
+                            },
+                            "bool.js": {
+                              "offset": "4157652",
+                              "size": 787,
+                            },
+                            "float.js": {
+                              "offset": "4158439",
+                              "size": 1515,
+                            },
+                            "int.js": {
+                              "offset": "4159954",
+                              "size": 2132,
+                            },
+                            "merge.js": {
+                              "offset": "4162086",
+                              "size": 2447,
+                            },
+                            "omap.js": {
+                              "offset": "4164533",
+                              "size": 2473,
+                            },
+                            "pairs.js": {
+                              "offset": "4167006",
+                              "size": 2751,
+                            },
+                            "schema.js": {
+                              "offset": "4169757",
+                              "size": 860,
+                            },
+                            "set.js": {
+                              "offset": "4170617",
+                              "size": 3030,
+                            },
+                            "timestamp.js": {
+                              "offset": "4173647",
+                              "size": 3698,
+                            },
+                          },
+                        },
+                      },
+                    },
+                    "stringify": {
+                      "files": {
+                        "foldFlowLines.js": {
+                          "offset": "4177345",
+                          "size": 4794,
+                        },
+                        "stringify.js": {
+                          "offset": "4182139",
+                          "size": 4361,
+                        },
+                        "stringifyCollection.js": {
+                          "offset": "4186500",
+                          "size": 5193,
+                        },
+                        "stringifyComment.js": {
+                          "offset": "4191693",
+                          "size": 724,
+                        },
+                        "stringifyDocument.js": {
+                          "offset": "4192417",
+                          "size": 2983,
+                        },
+                        "stringifyNumber.js": {
+                          "offset": "4195400",
+                          "size": 718,
+                        },
+                        "stringifyPair.js": {
+                          "offset": "4196118",
+                          "size": 5269,
+                        },
+                        "stringifyString.js": {
+                          "offset": "4201387",
+                          "size": 13219,
+                        },
+                      },
+                    },
+                    "util.js": {
+                      "offset": "4214606",
+                      "size": 594,
+                    },
+                    "visit.js": {
+                      "offset": "4215200",
+                      "size": 9107,
+                    },
+                  },
+                },
+                "index.js": {
+                  "offset": "4224307",
+                  "size": 191,
+                },
+                "package.json": {
+                  "offset": "4224498",
+                  "size": 23,
+                },
+              },
+            },
+            "dist": {
+              "files": {
+                "cli.mjs": {
+                  "offset": "4224521",
+                  "size": 7346,
+                },
+                "compose": {
+                  "files": {
+                    "compose-collection.js": {
+                      "offset": "4231867",
+                      "size": 3618,
+                    },
+                    "compose-doc.js": {
+                      "offset": "4235485",
+                      "size": 1615,
+                    },
+                    "compose-node.js": {
+                      "offset": "4237100",
+                      "size": 3964,
+                    },
+                    "compose-scalar.js": {
+                      "offset": "4241064",
+                      "size": 3446,
+                    },
+                    "composer.js": {
+                      "offset": "4244510",
+                      "size": 8613,
+                    },
+                    "resolve-block-map.js": {
+                      "offset": "4253123",
+                      "size": 5071,
+                    },
+                    "resolve-block-scalar.js": {
+                      "offset": "4258194",
+                      "size": 7500,
+                    },
+                    "resolve-block-seq.js": {
+                      "offset": "4265694",
+                      "size": 1820,
+                    },
+                    "resolve-end.js": {
+                      "offset": "4267514",
+                      "size": 1264,
+                    },
+                    "resolve-flow-collection.js": {
+                      "offset": "4268778",
+                      "size": 8946,
+                    },
+                    "resolve-flow-scalar.js": {
+                      "offset": "4277724",
+                      "size": 7364,
+                    },
+                    "resolve-props.js": {
+                      "offset": "4285088",
+                      "size": 5637,
+                    },
+                    "util-contains-newline.js": {
+                      "offset": "4290725",
+                      "size": 1081,
+                    },
+                    "util-empty-scalar-position.js": {
+                      "offset": "4291806",
+                      "size": 871,
+                    },
+                    "util-flow-indent-check.js": {
+                      "offset": "4292677",
+                      "size": 547,
+                    },
+                    "util-map-includes.js": {
+                      "offset": "4293224",
+                      "size": 471,
+                    },
+                  },
+                },
+                "doc": {
+                  "files": {
+                    "Document.js": {
+                      "offset": "4293695",
+                      "size": 13114,
+                    },
+                    "anchors.js": {
+                      "offset": "4306809",
+                      "size": 2403,
+                    },
+                    "applyReviver.js": {
+                      "offset": "4309212",
+                      "size": 1950,
+                    },
+                    "createNode.js": {
+                      "offset": "4311162",
+                      "size": 3155,
+                    },
+                    "directives.js": {
+                      "offset": "4314317",
+                      "size": 6237,
+                    },
+                  },
+                },
+                "errors.js": {
+                  "offset": "4320554",
+                  "size": 2124,
+                },
+                "index.js": {
+                  "offset": "4322678",
+                  "size": 1769,
+                },
+                "log.js": {
+                  "offset": "4324447",
+                  "size": 464,
+                },
+                "nodes": {
+                  "files": {
+                    "Alias.js": {
+                      "offset": "4324911",
+                      "size": 3419,
+                    },
+                    "Collection.js": {
+                      "offset": "4328330",
+                      "size": 5221,
+                    },
+                    "Node.js": {
+                      "offset": "4333551",
+                      "size": 1382,
+                    },
+                    "Pair.js": {
+                      "offset": "4334933",
+                      "size": 1232,
+                    },
+                    "Scalar.js": {
+                      "offset": "4336165",
+                      "size": 759,
+                    },
+                    "YAMLMap.js": {
+                      "offset": "4336924",
+                      "size": 5105,
+                    },
+                    "YAMLSeq.js": {
+                      "offset": "4342029",
+                      "size": 3667,
+                    },
+                    "addPairToJSMap.js": {
+                      "offset": "4345696",
+                      "size": 2269,
+                    },
+                    "identity.js": {
+                      "offset": "4347965",
+                      "size": 1794,
+                    },
+                    "toJS.js": {
+                      "offset": "4349759",
+                      "size": 1292,
+                    },
+                  },
+                },
+                "parse": {
+                  "files": {
+                    "cst-scalar.js": {
+                      "offset": "4351051",
+                      "size": 9382,
+                    },
+                    "cst-stringify.js": {
+                      "offset": "4360433",
+                      "size": 1799,
+                    },
+                    "cst-visit.js": {
+                      "offset": "4362232",
+                      "size": 3986,
+                    },
+                    "cst.js": {
+                      "offset": "4366218",
+                      "size": 3242,
+                    },
+                    "lexer.js": {
+                      "offset": "4369460",
+                      "size": 24073,
+                    },
+                    "line-counter.js": {
+                      "offset": "4393533",
+                      "size": 1445,
+                    },
+                    "parser.js": {
+                      "offset": "4394978",
+                      "size": 35345,
+                    },
+                  },
+                },
+                "public-api.js": {
+                  "offset": "4430323",
+                  "size": 4187,
+                },
+                "schema": {
+                  "files": {
+                    "Schema.js": {
+                      "offset": "4434510",
+                      "size": 1547,
+                    },
+                    "common": {
+                      "files": {
+                        "map.js": {
+                          "offset": "4436057",
+                          "size": 483,
+                        },
+                        "null.js": {
+                          "offset": "4436540",
+                          "size": 469,
+                        },
+                        "seq.js": {
+                          "offset": "4437009",
+                          "size": 484,
+                        },
+                        "string.js": {
+                          "offset": "4437493",
+                          "size": 457,
+                        },
+                      },
+                    },
+                    "core": {
+                      "files": {
+                        "bool.js": {
+                          "offset": "4437950",
+                          "size": 635,
+                        },
+                        "float.js": {
+                          "offset": "4438585",
+                          "size": 1510,
+                        },
+                        "int.js": {
+                          "offset": "4440095",
+                          "size": 1407,
+                        },
+                        "schema.js": {
+                          "offset": "4441502",
+                          "size": 509,
+                        },
+                      },
+                    },
+                    "json": {
+                      "files": {
+                        "schema.js": {
+                          "offset": "4442011",
+                          "size": 1900,
+                        },
+                      },
+                    },
+                    "tags.js": {
+                      "offset": "4443911",
+                      "size": 3239,
+                    },
+                    "yaml-1.1": {
+                      "files": {
+                        "binary.js": {
+                          "offset": "4447150",
+                          "size": 2818,
+                        },
+                        "bool.js": {
+                          "offset": "4449968",
+                          "size": 841,
+                        },
+                        "float.js": {
+                          "offset": "4450809",
+                          "size": 1626,
+                        },
+                        "int.js": {
+                          "offset": "4452435",
+                          "size": 2232,
+                        },
+                        "merge.js": {
+                          "offset": "4454667",
+                          "size": 2548,
+                        },
+                        "omap.js": {
+                          "offset": "4457215",
+                          "size": 2581,
+                        },
+                        "pairs.js": {
+                          "offset": "4459796",
+                          "size": 2854,
+                        },
+                        "schema.js": {
+                          "offset": "4462650",
+                          "size": 912,
+                        },
+                        "set.js": {
+                          "offset": "4463562",
+                          "size": 3114,
+                        },
+                        "timestamp.js": {
+                          "offset": "4466676",
+                          "size": 3775,
+                        },
+                      },
+                    },
+                  },
+                },
+                "stringify": {
+                  "files": {
+                    "foldFlowLines.js": {
+                      "offset": "4470451",
+                      "size": 4885,
+                    },
+                    "stringify.js": {
+                      "offset": "4475336",
+                      "size": 4495,
+                    },
+                    "stringifyCollection.js": {
+                      "offset": "4479831",
+                      "size": 5359,
+                    },
+                    "stringifyComment.js": {
+                      "offset": "4485190",
+                      "size": 801,
+                    },
+                    "stringifyDocument.js": {
+                      "offset": "4485991",
+                      "size": 3104,
+                    },
+                    "stringifyNumber.js": {
+                      "offset": "4489095",
+                      "size": 748,
+                    },
+                    "stringifyPair.js": {
+                      "offset": "4489843",
+                      "size": 5454,
+                    },
+                    "stringifyString.js": {
+                      "offset": "4495297",
+                      "size": 13400,
+                    },
+                  },
+                },
+                "test-events.js": {
+                  "offset": "4508697",
+                  "size": 4274,
+                },
+                "util.js": {
+                  "offset": "4512971",
+                  "size": 1008,
+                },
+                "visit.js": {
+                  "offset": "4513979",
+                  "size": 9253,
+                },
+              },
+            },
+            "package.json": {
+              "offset": "4523232",
+              "size": 1771,
+            },
+            "util.js": {
+              "offset": "4525003",
+              "size": 80,
+            },
+          },
+        },
+      },
+    },
+    "package.json": {
+      "offset": "4528425",
+      "size": 240,
+    },
+  },
+}
+`;
+
 exports[`yarn two package.json w/ native module 1`] = `
 {
   "linux": [],
@@ -65928,7 +70793,7 @@ exports[`yarn two package.json w/ native module 2`] = `
     },
     "package.json": {
       "offset": "426524",
-      "size": 266,
+      "size": 277,
     },
   },
 }
