@@ -3,7 +3,7 @@ import { Platform, Arch, DIR_TARGET } from "electron-builder"
 import { outputFile } from "fs-extra"
 import * as path from "path"
 import { copy, readJSON, writeJSON } from "fs-extra";
-import { spawn } from "builder-util/out/util"
+// import { spawn } from "builder-util/out/util"
 
 test("yarn workspace", ({ expect }) =>
   assertPack(
@@ -82,9 +82,9 @@ test("yarn two package.json", ({ expect }) =>
     {
       isInstallDepsBefore: true,
       projectDirCreated: async (projectDir, tmpDir) => {
-        await spawn("npm", ["install"], {
-          cwd: projectDir,
-        })
+        // await spawn("npm", ["install"], {
+        //   cwd: projectDir,
+        // })
 
         copy("node_modules", path.join(projectDir, "node_modules"));
         copy("package.json", path.join(projectDir, "package.json"));
