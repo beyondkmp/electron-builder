@@ -1,3 +1,28 @@
+# [](https://github.com/electron-userland/electron-builder/compare/v26.0.8...v) (2025-04-10)
+
+
+### Bug Fixes
+
+* `after-install.tpl` - Detect if `apparmor` is enabled instead of just file-exists check ([#8932](https://github.com/electron-userland/electron-builder/issues/8932)) ([e1ea62b](https://github.com/electron-userland/electron-builder/commit/e1ea62b0029c4adca20196ef060948777caeac37))
+* `AsyncEventEmitter` `filterListeners` doesn't work with promises ([#8895](https://github.com/electron-userland/electron-builder/issues/8895)) ([22da644](https://github.com/electron-userland/electron-builder/commit/22da64425182456eb4d1243138dde27c80d6adac))
+* allow publishing to Snap Store to be disabled with snap-specific `snap.publish` options ([#8896](https://github.com/electron-userland/electron-builder/issues/8896)) ([67b6f71](https://github.com/electron-userland/electron-builder/commit/67b6f71f85798dba4ce51dfb2cd012e04cd391db))
+* allow usage of `node-linker=hoisted` with pnpm ([#8885](https://github.com/electron-userland/electron-builder/issues/8885)) ([4cc475e](https://github.com/electron-userland/electron-builder/commit/4cc475ed214861b99075d4639c92686803420174))
+* Azure trust signing fails with spaces in parameters ([#8979](https://github.com/electron-userland/electron-builder/issues/8979)) ([f24a2ce](https://github.com/electron-userland/electron-builder/commit/f24a2ce05cfbc88b79c1d743d13c898d70be99df))
+* custom publisher extension check and throw error if not found ([#8926](https://github.com/electron-userland/electron-builder/issues/8926)) ([3caab3c](https://github.com/electron-userland/electron-builder/commit/3caab3c4226a73ab458ac5a315aff160c5500b94))
+* find cwd using `getProjectRootPath` for detecting package manager ([#8941](https://github.com/electron-userland/electron-builder/issues/8941)) ([14b96df](https://github.com/electron-userland/electron-builder/commit/14b96dfcbb7e4fd114169c35b50932bf5777fcf1))
+* **mac:** allow ad-hoc identities for codesigning ([#9007](https://github.com/electron-userland/electron-builder/issues/9007)) ([bff46ec](https://github.com/electron-userland/electron-builder/commit/bff46ec41c4a7715cc06f7dfd6ff95f8e4bbe869))
+* **mac:** when using default `osx-sign`, specifically pass in identity name instead of hash ([#8908](https://github.com/electron-userland/electron-builder/issues/8908)) ([62029b0](https://github.com/electron-userland/electron-builder/commit/62029b08c10a6b12d8ef30bf57ae61a877f297f4))
+* malformed `Files` param when using Azure Trusted Signing ([#8987](https://github.com/electron-userland/electron-builder/issues/8987)) ([9fb2895](https://github.com/electron-userland/electron-builder/commit/9fb2895cd008ea6fc6210078decabc15a5c0144a))
+* optimize workspace package resolution in dependency tree ([#8958](https://github.com/electron-userland/electron-builder/issues/8958)) ([81e0c47](https://github.com/electron-userland/electron-builder/commit/81e0c472fe2691b716aba5428dedc5da1c57e773))
+* pnpm collection of optional dependencies ([#8957](https://github.com/electron-userland/electron-builder/issues/8957)) ([ad151b9](https://github.com/electron-userland/electron-builder/commit/ad151b9dbefa746514dd15471e5ef8bf5eed1d9b))
+* re-enable CI build workflow by swapping in `dorny/paths-filter` ([#8961](https://github.com/electron-userland/electron-builder/issues/8961)) ([1d47cb1](https://github.com/electron-userland/electron-builder/commit/1d47cb1dfcc77e5f21628623720a7948401548c4))
+* re-export various types from electron-updater ([#8933](https://github.com/electron-userland/electron-builder/issues/8933)) ([324032c](https://github.com/electron-userland/electron-builder/commit/324032c5ea94b983cda8a5510fcc1a3fb752a1a1))
+* remove implicit dependencies handling ([#9010](https://github.com/electron-userland/electron-builder/issues/9010)) ([8bd1a10](https://github.com/electron-userland/electron-builder/commit/8bd1a10a2dcdee080e3b5a0359453d5d34b3ffbf)), closes [#9000](https://github.com/electron-userland/electron-builder/issues/9000)
+* support `mas` packages for flipping fuses ([#8947](https://github.com/electron-userland/electron-builder/issues/8947)) ([7ba4fea](https://github.com/electron-userland/electron-builder/commit/7ba4fea95825650f02749949632b351c75d3019a))
+* **win:** execute `customUnInstall` before `atomicRMDir` function in NSIS uninstaller ([#8915](https://github.com/electron-userland/electron-builder/issues/8915)) ([8903c5d](https://github.com/electron-userland/electron-builder/commit/8903c5df046b74411f3b1fa958cef9a5955d01ef))
+
+
+
 # [](https://github.com/electron-userland/electron-builder/compare/v26.0.11...v) (2025-03-20)
 
 
