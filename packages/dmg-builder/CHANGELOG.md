@@ -1,5 +1,15 @@
 # dmg-builder
 
+## 26.0.17
+
+### Patch Changes
+
+- [#9135](https://github.com/electron-userland/electron-builder/pull/9135) [`2c361819`](https://github.com/electron-userland/electron-builder/commit/2c3618195efe97ab04f99ba70fcbbfbdbc24d20c) Thanks [@mmaietta](https://github.com/mmaietta)! - chore: stabilize hdiutil resize by using whole number byte size
+
+- Updated dependencies [[`a6be444c`](https://github.com/electron-userland/electron-builder/commit/a6be444c90e59bbe92c53e94d7a5070f1399651f), [`e56977b5`](https://github.com/electron-userland/electron-builder/commit/e56977b5c6da25e4d797fd6cb40ea8ca52464fd3)]:
+  - builder-util@26.0.17
+  - app-builder-lib@26.0.17
+
 ## 26.0.16
 
 ### Patch Changes

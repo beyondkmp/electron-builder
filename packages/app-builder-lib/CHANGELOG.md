@@ -1,5 +1,17 @@
 # app-builder-lib
 
+## 26.0.17
+
+### Patch Changes
+
+- [#9026](https://github.com/electron-userland/electron-builder/pull/9026) [`e56977b5`](https://github.com/electron-userland/electron-builder/commit/e56977b5c6da25e4d797fd6cb40ea8ca52464fd3) Thanks [@Almighty-Alpaca](https://github.com/Almighty-Alpaca)! - fix: don't assume commands end with .cmd on Windows by leveraging `which` package
+
+- Updated dependencies [[`a6be444c`](https://github.com/electron-userland/electron-builder/commit/a6be444c90e59bbe92c53e94d7a5070f1399651f), [`2c361819`](https://github.com/electron-userland/electron-builder/commit/2c3618195efe97ab04f99ba70fcbbfbdbc24d20c)]:
+  - builder-util@26.0.17
+  - dmg-builder@26.0.17
+  - electron-builder-squirrel-windows@26.0.17
+  - electron-publish@26.0.17
+
 ## 26.0.16
 
 ### Patch Changes
