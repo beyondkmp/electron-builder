@@ -1,6 +1,9 @@
 !include FileFunc.nsh
 !include UAC.nsh
 
+!insertmacro GetParameters
+!insertmacro GetOptions
+
 !define FOLDERID_UserProgramFiles {5CD7AEE2-2219-4A67-B85D-6C9CE15660CB}
 !define KF_FLAG_CREATE 0x00008000
 
@@ -41,9 +44,10 @@ Var installMode
     ${endif}
 
     # allow /D switch to override installation path https://github.com/electron-userland/electron-builder/issues/1551
-    ${StdUtils.GetParameter} $R0 "D" ""
-    ${If} $R0 != ""
-      StrCpy $INSTDIR $R0
+    ${GetParameters} $R0
+    ${GetOptions} $R0 "/D=" $R1
+    ${IfNot} ${Errors}
+      StrCpy $INSTDIR $R1
     ${endif}
 
   !macroend
@@ -84,9 +88,10 @@ Var installMode
     ${endif}
 
     # allow /D switch to override installation path https://github.com/electron-userland/electron-builder/issues/1551
-    ${StdUtils.GetParameter} $R0 "D" ""
-    ${If} $R0 != ""
-      StrCpy $INSTDIR $R0
+    ${GetParameters} $R0
+    ${GetOptions} $R0 "/D=" $R1
+    ${IfNot} ${Errors}
+      StrCpy $INSTDIR $R1
     ${endif}
 
   !macroend
