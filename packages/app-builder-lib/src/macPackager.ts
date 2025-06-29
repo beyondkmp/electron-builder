@@ -21,6 +21,7 @@ import { createCommonTarget, NoOpTarget } from "./targets/targetFactory"
 import { isMacOsHighSierra } from "./util/macosVersion"
 import { getTemplatePath } from "./util/pathManager"
 import { resolveFunction } from "./util/resolve"
+import { isAutoDiscoveryCodeSignIdentity } from "./util/flags"
 
 export type CustomMacSignOptions = SignOptions
 export type CustomMacSign = (configuration: CustomMacSignOptions, packager: MacPackager) => Promise<void>
@@ -238,7 +239,7 @@ export class MacPackager extends PlatformPackager<MacConfiguration> {
     const isMas = masOptions != null
     const options = masOptions == null ? this.platformSpecificBuildOptions : masOptions
     const qualifier = options.identity
-    const fallBackToAdhoc = (arch === Arch.arm64 || arch === Arch.universal) && !this.forceCodeSigning
+    const fallBackToAdhoc = (arch === Arch.arm64 || arch === Arch.universal) && !this.forceCodeSigning && isAutoDiscoveryCodeSignIdentity()
 
     if (qualifier === null) {
       if (this.forceCodeSigning) {
