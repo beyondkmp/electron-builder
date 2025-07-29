@@ -1,5 +1,15 @@
 # app-builder-lib
 
+## 26.0.20
+
+### Patch Changes
+
+- [#9219](https://github.com/electron-userland/electron-builder/pull/9219) [`cf0ac45d`](https://github.com/electron-userland/electron-builder/commit/cf0ac45db79e3e3ff1cef3ad931f7272646d1cb1) Thanks [@beyondkmp](https://github.com/beyondkmp)! - fix(yarn): check for dependencies in both projectDir and appDir during installation
+
+- Updated dependencies []:
+  - dmg-builder@26.0.20
+  - electron-builder-squirrel-windows@26.0.20
+
 ## 26.0.19
 
 ### Patch Changes
