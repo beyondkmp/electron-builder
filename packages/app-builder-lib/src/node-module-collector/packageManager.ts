@@ -86,7 +86,7 @@ export function detectPackageManagerByLockfile(cwd: string): PM | null {
   const yarn = has("yarn.lock")
   const pnpm = has("pnpm-lock.yaml")
   const npm = has("package-lock.json")
-  const bun = has("bun.lockb")
+  const bun = has("bun.lockb") || has("bun.lock")
 
   const detected: PM[] = []
   if (yarn) detected.push(PM.YARN)
