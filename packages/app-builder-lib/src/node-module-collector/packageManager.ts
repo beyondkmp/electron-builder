@@ -8,6 +8,7 @@ export enum PM {
   YARN = "yarn",
   PNPM = "pnpm",
   YARN_BERRY = "yarn-berry",
+  BUN = "bun",
 }
 
 // Cache for resolved paths
@@ -16,6 +17,7 @@ const pmPathCache: Record<PM, string | null | undefined> = {
   [PM.YARN]: undefined,
   [PM.PNPM]: undefined,
   [PM.YARN_BERRY]: undefined,
+  [PM.BUN]: undefined,
 }
 
 function resolveCommand(pm: PM): string {
@@ -48,6 +50,7 @@ export function detectPackageManagerByEnv(): PM | null {
     const userAgent = process.env.npm_config_user_agent
     if (userAgent.includes("pnpm")) return PM.PNPM
     if (userAgent.includes("yarn")) return PM.YARN
+    if (userAgent.includes("bun")) return PM.BUN
     if (userAgent.includes("npm")) return PM.NPM
   }
 
@@ -55,6 +58,7 @@ export function detectPackageManagerByEnv(): PM | null {
     const execPath = process.env.npm_execpath
     if (execPath.includes("pnpm")) return PM.PNPM
     if (execPath.includes("yarn")) return PM.YARN
+    if (execPath.includes("bun")) return PM.BUN
     if (execPath.includes("npm")) return PM.NPM
   }
 
@@ -65,9 +69,13 @@ export function detectPackageManagerByEnv(): PM | null {
     if (packageJson.packageManager) {
       if (packageJson.packageManager.startsWith("pnpm@")) return PM.PNPM
       if (packageJson.packageManager.startsWith("yarn@")) return PM.YARN
+      if (packageJson.packageManager.startsWith("bun@")) return PM.BUN
       if (packageJson.packageManager.startsWith("npm@")) return PM.NPM
     }
   }
+
+  // Detect via well-known env or runtime (Bun)
+  if (process.env.BUN_INSTALL || (process as any).versions?.bun) return PM.BUN
 
   return null
 }
@@ -78,11 +86,13 @@ export function detectPackageManagerByLockfile(cwd: string): PM | null {
   const yarn = has("yarn.lock")
   const pnpm = has("pnpm-lock.yaml")
   const npm = has("package-lock.json")
+  const bun = has("bun.lockb")
 
   const detected: PM[] = []
   if (yarn) detected.push(PM.YARN)
   if (pnpm) detected.push(PM.PNPM)
   if (npm) detected.push(PM.NPM)
+  if (bun) detected.push(PM.BUN)
 
   if (detected.length === 1) {
     return detected[0]

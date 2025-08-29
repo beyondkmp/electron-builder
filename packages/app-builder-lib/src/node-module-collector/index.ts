@@ -16,6 +16,9 @@ export async function getCollectorByPackageManager(pm: PM, rootDir: string, temp
       return new NpmNodeModulesCollector(rootDir, tempDirManager)
     case PM.YARN:
       return new YarnNodeModulesCollector(rootDir, tempDirManager)
+    case PM.BUN:
+      // Bun installs deps, but we use npm to query rich dependency graph
+      return new NpmNodeModulesCollector(rootDir, tempDirManager)
     default:
       return new NpmNodeModulesCollector(rootDir, tempDirManager)
   }
